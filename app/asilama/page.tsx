@@ -3,11 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import AnimatedSection from '@/components/AnimatedSection';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
-import RelatedServices from '@/components/RelatedServices';
 
 export const metadata: Metadata = {
   title: 'Aşılama Hizmetleri | Kedi Köpek Aşıları',
-  description: 'Batıkent Ankara\'da kedi ve köpek aşılama hizmetleri. Karma aşı, kuduz aşısı, iç-dış parazit. ☎ (0312) 354 26 52',
+  description: 'Batıkent Ankara\'da kedi ve köpek aşılama hizmetleri. Karma aşı, kuduz aşısı, iç-dış parazit. (0312) 354 26 52',
 };
 
 export default function AsilamaPage() {
@@ -22,16 +21,16 @@ export default function AsilamaPage() {
     { name: 'Kuduz Aşısı', desc: 'Yasal zorunluluk, ölümcül hastalığa karşı koruma', when: '12. haftadan itibaren' },
     { name: 'Corona + Leptospirosis', desc: 'Enfeksiyöz hastalıklara karşı ek koruma', when: '8. haftadan itibaren' },
     { name: 'Kennel Cough (KC)', desc: 'Barınak öksürüğüne karşı koruma', when: 'Sosyal ortama girmeden önce' },
+    { name: 'Lyme Aşısı', desc: 'Kene kaynaklı Lyme hastalığına karşı koruma', when: '12. haftadan itibaren, yıllık tekrar' },
   ];
 
   return (
     <>
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Hizmetler', href: '/hizmetler' }, { name: 'Aşılama', href: '/asilama' }]} />
 
-      <section className="relative py-20 bg-gradient-to-br from-green-600 to-primary-700">
+      <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <div className="text-5xl mb-4">💉</div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Aşılama Hizmetleri</h1>
             <p className="text-lg text-green-100 max-w-2xl mx-auto">Evcil dostlarınız için koruyucu aşı programları</p>
           </AnimatedSection>
@@ -67,7 +66,7 @@ export default function AsilamaPage() {
           {/* Kedi Aşıları */}
           <AnimatedSection>
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">🐱 Kedi Aşı Takvimi</h2>
+              <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Kedi Aşı Takvimi</h2>
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
                 {kediAsilari.map((asi, i) => (
                   <div key={asi.name} className={`p-6 ${i !== kediAsilari.length - 1 ? 'border-b border-gray-100' : ''}`}>
@@ -87,7 +86,7 @@ export default function AsilamaPage() {
           {/* Köpek Aşıları */}
           <AnimatedSection>
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">🐶 Köpek Aşı Takvimi</h2>
+              <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Köpek Aşı Takvimi</h2>
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
                 {kopekAsilari.map((asi, i) => (
                   <div key={asi.name} className={`p-6 ${i !== kopekAsilari.length - 1 ? 'border-b border-gray-100' : ''}`}>
@@ -110,14 +109,12 @@ export default function AsilamaPage() {
               <p className="text-gray-600 mb-6">Evcil hayvanınızın aşı takvimini kontrol ettirmek için hemen randevu alın.</p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link href="/randevu" className="px-8 py-4 bg-primary-500 text-white font-bold rounded-xl hover:bg-primary-600 transition-colors shadow-lg text-lg">Randevu Al</Link>
-                <a href="tel:+903123542652" className="px-8 py-4 bg-white text-primary-600 font-bold rounded-xl hover:bg-gray-50 transition-colors border border-primary-200 text-lg">📞 (0312) 354 26 52</a>
-              </div>
+<a href="tel:+903123542652" className="px-8 py-4 bg-white text-primary-600 font-bold rounded-xl hover:bg-gray-50 transition-colors border border-primary-200 text-lg">(0312) 354 26 52</a>
+                </div>
             </div>
           </AnimatedSection>
         </div>
       </section>
-
-      <RelatedServices showAllLink exclude="/asilama" />
     </>
   );
 }

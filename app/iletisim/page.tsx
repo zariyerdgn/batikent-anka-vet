@@ -46,7 +46,8 @@ export default function IletisimPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-primary-100 text-sm font-medium mb-6">
-              📞 Bize Ulaşın
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                Bize Ulaşın
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               İletişim
@@ -72,8 +73,8 @@ export default function IletisimPage() {
                 rel="noopener noreferrer"
                 className="group flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:border-primary-200 transition-all h-full"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center text-xl group-hover:bg-primary-200 transition-colors">
-                  📍
+                <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center group-hover:bg-primary-200 transition-colors">
+                  <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-base mb-1">Adres</h3>
@@ -90,33 +91,33 @@ export default function IletisimPage() {
 
             {/* Telefon */}
             <AnimatedSection delay={0.1}>
-              <a
-                href="tel:+903123542652"
-                className="group flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:border-primary-200 transition-all h-full"
+              <div
+                className="group flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md border border-gray-100 h-full"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-xl group-hover:bg-green-200 transition-colors">
-                  📞
+                <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                  <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-base mb-1">Telefon</h3>
-                  <p className="text-sm text-primary-600 font-semibold">(0312) 354 26 52</p>
+                  <a href="tel:+905548550590" className="block text-sm text-primary-600 font-semibold hover:underline">0554 855 05 90 (Cep)</a>
+                  <a href="tel:+903123542652" className="block text-sm text-primary-600 font-semibold hover:underline mt-0.5">(0312) 354 26 52 (Sabit)</a>
                   <p className="text-xs text-gray-500 mt-1">Aramak için tıklayın</p>
                 </div>
-              </a>
+              </div>
             </AnimatedSection>
 
             {/* E-posta */}
             <AnimatedSection delay={0.2}>
               <a
-                href="mailto:info@batikentveteriner.com"
+                href="mailto:ankavet06@gmail.com"
                 className="group flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:border-primary-200 transition-all h-full"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-xl group-hover:bg-blue-200 transition-colors">
-                  ✉️
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-base mb-1">E-posta</h3>
-                  <p className="text-sm text-primary-600 font-semibold">info@batikentveteriner.com</p>
+                  <p className="text-sm text-primary-600 font-semibold">ankavet06@gmail.com</p>
                   <p className="text-xs text-gray-500 mt-1">Mail göndermek için tıklayın</p>
                 </div>
               </a>
@@ -125,23 +126,15 @@ export default function IletisimPage() {
             {/* Çalışma Saatleri */}
             <AnimatedSection delay={0.3}>
               <div className="group flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md border border-gray-100 h-full">
-                <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-xl">
-                  🕐
+                <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                  <svg className="w-6 h-6 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10" strokeWidth={2} /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" /></svg>
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-base mb-2">Çalışma Saatleri</h3>
                   <div className="space-y-1">
                     <div className="flex items-center justify-between gap-4">
-                      <span className="text-sm text-gray-600">Pzt — Cum</span>
-                      <span className="text-sm font-semibold text-gray-800">09:00 – 19:00</span>
-                    </div>
-                    <div className="flex items-center justify-between gap-4">
-                      <span className="text-sm text-gray-600">Cumartesi</span>
-                      <span className="text-sm font-semibold text-gray-800">09:00 – 17:00</span>
-                    </div>
-                    <div className="flex items-center justify-between gap-4">
-                      <span className="text-sm text-gray-600">Pazar</span>
-                      <span className="text-sm font-semibold text-red-500">Sadece Acil</span>
+                      <span className="text-sm text-gray-600">Her Gün (Pazar dahil)</span>
+                      <span className="text-sm font-semibold text-gray-800">09:00 – 23:00</span>
                     </div>
                   </div>
                 </div>
@@ -175,7 +168,7 @@ export default function IletisimPage() {
                 Instagram
               </a>
               <a
-                href="tel:+903123542652"
+                href="tel:+905548550590"
                 className="inline-flex items-center gap-3 px-7 py-3.5 bg-primary-600 text-white font-bold rounded-xl hover:bg-primary-700 transition-colors shadow-lg shadow-primary-600/25 text-base"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -311,7 +304,7 @@ export default function IletisimPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex items-center gap-2 px-3 py-2 bg-white/90 backdrop-blur-sm rounded-xl w-fit">
-                      <span className="text-lg">🏥</span>
+                      <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
                       <div>
                         <p className="text-sm font-bold text-gray-900">Anka Veteriner Kliniği</p>
                         <p className="text-xs text-gray-500">Batıkent, Ankara</p>
@@ -325,14 +318,14 @@ export default function IletisimPage() {
               <AnimatedSection direction="right" delay={0.1}>
                 <div className="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 flex-1">
                   <div className="px-5 py-4 border-b border-gray-100 flex items-center gap-2">
-                    <span className="text-lg">🗺️</span>
+                    <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
                     <div>
                       <p className="text-sm font-bold text-gray-900">Konum</p>
                       <p className="text-xs text-gray-500">Haritada görüntüle</p>
                     </div>
                   </div>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48912.85455073927!2d32.68!3d39.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d33e8c2f3de577%3A0xbe308f3c2a4c7e95!2sBat%C4%B1kent%2C%20Yenimahalle%2FAnkara!5e0!3m2!1str!2str!4v1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.5!2d32.6234!3d39.9725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d33e8c2f3de577%3A0xbe308f3c2a4c7e95!2sAnka%20Veteriner%20Klini%C4%9Fi!5e0!3m2!1str!2str!4v1"
                     width="100%"
                     height="320"
                     style={{ border: 0 }}
@@ -354,7 +347,7 @@ export default function IletisimPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <AnimatedSection>
             <div className="flex items-center justify-center gap-3 mb-4">
-              <span className="text-4xl">🐾</span>
+              <svg className="w-10 h-10 text-primary-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 18c-2.21 0-4-1.79-4-4 0-1.66 2-5 4-5s4 3.34 4 5c0 2.21-1.79 4-4 4zm-3.5-9C7.67 9 7 8.33 7 7.5S7.67 6 8.5 6 10 6.67 10 7.5 9.33 9 8.5 9zm7 0c-.83 0-1.5-.67-1.5-1.5S14.67 6 15.5 6 17 6.67 17 7.5 16.33 9 15.5 9zm-10 3c-.83 0-1.5-.67-1.5-1.5S4.67 8 5.5 8 7 8.67 7 9.5 6.33 12 5.5 12zm13 0c-.83 0-1.5-.67-1.5-1.5S17.67 8 18.5 8 20 8.67 20 9.5 19.33 12 18.5 12z" /></svg>
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-3">
               Acil Durumlar İçin 7/24 Yanınızdayız
@@ -364,10 +357,11 @@ export default function IletisimPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="tel:+903123542652"
+                href="tel:+905548550590"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-xl hover:from-red-600 hover:to-red-700 transition-all shadow-lg text-lg"
               >
-                🚨 Acil: (0312) 354 26 52
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M5.07 19h13.86c1.54 0 2.5-1.67 1.73-3L13.73 4c-.77-1.33-2.69-1.33-3.46 0L3.34 16c-.77 1.33.19 3 1.73 3z" /></svg>
+                Acil: 0554 855 05 90
               </a>
               <a
                 href="https://wa.me/905548550590?text=Acil+durum+var"
@@ -375,7 +369,8 @@ export default function IletisimPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-white text-green-600 font-bold rounded-xl border-2 border-green-200 hover:bg-green-50 transition-all text-lg"
               >
-                💬 WhatsApp Acil
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                WhatsApp Acil
               </a>
             </div>
           </AnimatedSection>

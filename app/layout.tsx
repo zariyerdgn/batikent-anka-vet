@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     default: 'Batıkent Veteriner | Anka Veteriner Kliniği - Ankara Pet & Evcil Hayvan',
     template: '%s | Anka Veteriner Kliniği Batıkent',
   },
-  description: 'Batıkent ve Ankara\'da evcil hayvan veteriner hizmetleri. Kedi köpek muayene, aşılama, kısırlaştırma, cerrahi, acil veteriner. ☎ (0312) 354 26 52',
+  description: 'Batıkent ve Ankara\'da evcil hayvan veteriner hizmetleri. Kedi köpek muayene, aşılama, kısırlaştırma, cerrahi, acil veteriner. 0554 855 05 90',
   keywords: ['Batıkent veteriner', 'Ankara veteriner', 'Batıkent veteriner kliniği', 'kedi köpek veteriner Batıkent', 'kedi kısırlaştırma Ankara', 'aşılama', 'acil veteriner Batıkent', 'Yenimahalle veteriner', 'Etimesgut veteriner', 'evcil hayvan veteriner'],
   authors: [{ name: 'Anka Veteriner Kliniği' }],
   creator: 'Anka Veteriner Kliniği',
@@ -67,7 +67,7 @@ const schemaData = {
       description: 'Batıkent ve Ankara genelinde evcil hayvan veteriner hizmetleri.',
       url: 'https://batikentveteriner.com',
       telephone: '+903123542652',
-      email: 'info@batikentveteriner.com',
+      email: 'ankavet06@gmail.com',
       priceRange: '₺₺',
       address: {
         '@type': 'PostalAddress',
@@ -100,12 +100,10 @@ const schemaData = {
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Acil Veteriner Hizmetleri' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Ameliyat ve Cerrahi' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kedi Kısırlaştırma' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pet Pansiyon' } },
         ],
       },
       openingHoursSpecification: [
-        { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '19:00' },
-        { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '09:00', closes: '17:00' },
+        { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '09:00', closes: '23:00' },
       ],
       sameAs: ['https://www.instagram.com/ankavetbatikent/'],
       founder: {
@@ -145,7 +143,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <meta name="theme-color" content="#10b981" />
+        <meta name="theme-color" content="#14b8a6" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <link rel="manifest" href="/manifest.json" />

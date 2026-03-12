@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   if (!loc) return { title: 'Bölge Bulunamadı' };
   return {
     title: `${loc.name} Veteriner | Anka Veteriner Kliniği`,
-    description: `${loc.name} ve çevresinde veteriner hizmetleri. Evcil hayvan sağlığı. ☎ (0312) 354 26 52`,
+    description: `${loc.name} ve çevresinde veteriner hizmetleri. Evcil hayvan sağlığı. (0312) 354 26 52`,
     keywords: loc.keywords,
   };
 }
@@ -36,7 +36,7 @@ export default async function BolgeDetailPage({ params }: { params: Params }) {
       <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <div className="text-5xl mb-4">📍</div>
+            <svg className="w-12 h-12 text-white mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{loc.name} Veteriner</h1>
             <p className="text-lg text-primary-100 max-w-2xl mx-auto">{loc.description}</p>
           </AnimatedSection>
@@ -68,7 +68,7 @@ export default async function BolgeDetailPage({ params }: { params: Params }) {
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-6 mb-8">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">📊 Bölge Bilgileri</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">Bölge Bilgileri</h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <span className="text-sm text-gray-500">Bölge</span>
@@ -96,13 +96,13 @@ export default async function BolgeDetailPage({ params }: { params: Params }) {
             <div>
               <AnimatedSection direction="right">
                 <div className="bg-white rounded-2xl p-6 shadow-xl border border-gray-100 sticky top-24">
-                  <h3 className="text-lg font-bold text-gray-900 mb-4">📞 Hemen İletişime Geçin</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-4">Hemen İletişime Geçin</h3>
                   <div className="space-y-3 mb-6">
                     <a href="tel:+903123542652" className="flex items-center gap-3 p-3 bg-primary-50 rounded-xl text-primary-700 font-medium hover:bg-primary-100 transition-colors">
-                      <span>📞</span> (0312) 354 26 52
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg> (0312) 354 26 52
                     </a>
                     <a href="https://wa.me/905548550590?text=Merhaba" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 bg-green-50 rounded-xl text-green-700 font-medium hover:bg-green-100 transition-colors">
-                      <span>💬</span> WhatsApp
+                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg> WhatsApp
                     </a>
                   </div>
                   <Link href="/randevu" className="block w-full text-center py-3 bg-gradient-to-r from-accent-500 to-accent-600 text-white font-bold rounded-xl hover:from-accent-600 hover:to-accent-700 transition-colors shadow-lg">

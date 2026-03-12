@@ -1,5 +1,55 @@
 Batıkent Anka Veteriner Web Sitesi - Geliştirme Promptu
+
 Bu dosya, mevcut Yerköy Anka Veteriner web sitesinin birebir aynısını Batıkent Anka Veteriner için oluşturmak amacıyla hazırlanmış kapsamlı bir prompttur. Teknoloji, tasarım, yapı ve içerik olarak birebir aynı olacak, sadece lokasyon/işletme bilgileri değişecektir.
+
+==========================================================
+MÜŞTERİ GERİ BİLDİRİM NOTLARI (El Yazısı - Uygulanan Değişiklikler)
+==========================================================
+
+SAYFA 1 - GENEL DEĞİŞİKLİKLER:
+- Pet Pansiyon kısmı tamamen kaldırılacak.
+- Ana sayfadaki hizmetler bölümü kaldırılacak (Profesyonel Veteriner Hizmetleri yazan 5 başlık).
+- "Hizmetler" başlığı "Hizmetlerimiz" olarak güncellenecek.
+- Alt başlıklar açılır/kapanır (accordion) olacak.
+- Hizmetler ile ilgili fotoğraflar daha sonra gönderilecek.
+
+SAYFA 2 - HİZMETLER LİSTESİ (YENİ):
+- Acil 7/24
+- Anestezi ve Reanimasyon
+- Beslenme ve Diyet
+- Check-up
+- Dahiliye (İç Hastalıkları)
+    * Enfeksiyon Hastalıkları
+    * Endokrinoloji ve Metabolizma Hastalıkları
+    * Kardiyoloji → Ekokardiyografi, EKG
+    * Endoskopi
+- Dermatoloji
+- Doğum ve Jinekoloji
+- Fizik Tedavi ve Rehabilitasyon
+- Cerrahi
+    * Yumuşak Doku Cerrahisi
+    * Ortopedi ve Travmatoloji
+    * Eklem Cerrahisi
+    * Nöroşirurji
+
+SAYFA 3 - DİĞER DEĞİŞİKLİKLER:
+- Çalışma saatleri: 09:00 - 23:00 (Her gün, Pazar dahil)
+- Ekip kısmına Emel Hanımın fotoğrafı eklenecek.
+- Hizmetlerimiz kısmı düzenlenecek (fotoğraf gönderildi).
+- Tema rengimiz yeşil DEĞİLDİR. Turkuaz olacak.
+- Resimler ve başlıkları hatalı, düzenlenmesi gerekiyor.
+- Resimler üzerindeki emojiler kaldırılacak.
+- Fotoğraflar teknik olacak.
+- Ultrason, anestezi cihazı gibi fotoğraflar eklenecek.
+
+SAYFA 4 - VİZYON VE İLETİŞİM:
+- Vizyonumuz: "Anka Veteriner Kliniği, kurulduğu andan itibaren sürekli gelişmeyi hedef almış, yeni güncel cihaz donanımları ile tüm hastalarına en iyi hizmeti vermeyi hedeflemiştir."
+- Acil numarası cep telefonu olsun: 0554 855 05 90
+- E-posta: ankavet06@gmail.com (info@batikentveteriner.com yanlış, o isimde başka klinik var)
+- Telefon numaraları:
+    * Cep: 0554 855 05 90
+    * Sabit: 0312 354 26 52
+==========================================================
 
 PROMPT BAŞLANGIÇ
 Bana bir veteriner kliniği web sitesi oluştur. Bu site Batıkent Anka Veteriner Kliniği için olacak. Aşağıdaki tüm detayları birebir uygula.

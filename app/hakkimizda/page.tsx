@@ -11,10 +11,17 @@ export const metadata: Metadata = {
 };
 
 const values = [
-  { icon: '❤️', title: 'Şefkat', desc: 'Her hastamıza sevgi ve şefkatle yaklaşırız.' },
-  { icon: '🏆', title: 'Mükemmellik', desc: 'En yüksek standartlarda hizmet sunarız.' },
-  { icon: '🤝', title: 'Güven', desc: 'Şeffaf ve dürüst iletişim ile güven oluştururuz.' },
-  { icon: '💡', title: 'Yenilikçilik', desc: 'Veteriner hekimlikte en son gelişmeleri takip ederiz.' },
+  { title: 'Şefkat', desc: 'Her hastamıza sevgi ve şefkatle yaklaşırız.' },
+  { title: 'Mükemmellik', desc: 'En yüksek standartlarda hizmet sunarız.' },
+  { title: 'Güven', desc: 'Şeffaf ve dürüst iletişim ile güven oluştururuz.' },
+  { title: 'Yenilikçilik', desc: 'Veteriner hekimlikte en son gelişmeleri takip ederiz.' },
+];
+
+const valueIcons = [
+  <svg key="heart" className="w-10 h-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>,
+  <svg key="trophy" className="w-10 h-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>,
+  <svg key="handshake" className="w-10 h-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>,
+  <svg key="lightbulb" className="w-10 h-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>,
 ];
 
 export default function HakkimizdaPage() {
@@ -47,7 +54,7 @@ export default function HakkimizdaPage() {
               </div>
             </AnimatedSection>
             <AnimatedSection direction="right">
-              <span className="inline-flex items-center gap-2 px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">📖 Hikayemiz</span>
+              <span className="inline-flex items-center gap-2 px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">Hikayemiz</span>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Batıkent&apos;in Güvenilir Veteriner Kliniği</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 Anka Veteriner Kliniği, Batıkent ve Ankara genelinde evcil hayvan sağlığı alanında uzmanlaşmış bir veteriner kliniğidir. Deneyimli hekim kadromuz ile evcil dostlarınızın sağlığını en üst düzeyde korumayı hedefliyoruz.
@@ -64,10 +71,10 @@ export default function HakkimizdaPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            <StatCard number="15+" label="Yıllık Deneyim" icon="📅" delay={0} />
-            <StatCard number="5000+" label="Mutlu Hasta" icon="🐾" delay={0.1} />
-            <StatCard number="3" label="Uzman Hekim" icon="👨‍⚕️" delay={0.2} />
-            <StatCard number="24/7" label="Acil Hizmet" icon="🚑" delay={0.3} />
+            <StatCard number="11+" label="Yıllık Deneyim" icon="calendar" delay={0} />
+            <StatCard number="5000+" label="Mutlu Hasta" icon="paw" delay={0.1} />
+            <StatCard number="3" label="Uzman Hekim" icon="team" delay={0.2} />
+            <StatCard number="24/7" label="Acil Hizmet" icon="emergency" delay={0.3} />
           </div>
         </div>
       </section>
@@ -78,7 +85,7 @@ export default function HakkimizdaPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <AnimatedSection direction="left">
               <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 h-full border border-primary-200">
-                <div className="text-4xl mb-4">🎯</div>
+                <div className="flex justify-center mb-4"><svg className="w-10 h-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg></div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Misyonumuz</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Batıkent ve Ankara genelinde hayvan sağlığı alanında en yüksek kalitede hizmet sunarak, hayvanların yaşam kalitesini artırmak ve sahiplerinin gönül rahatlığını sağlamak. Her hastamıza şefkat, bilgi ve en modern tedavi yöntemleriyle yaklaşmak.
@@ -87,10 +94,10 @@ export default function HakkimizdaPage() {
             </AnimatedSection>
             <AnimatedSection direction="right">
               <div className="bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-2xl p-8 h-full border border-secondary-200">
-                <div className="text-4xl mb-4">🔭</div>
+                <div className="flex justify-center mb-4"><svg className="w-10 h-10 text-secondary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg></div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Vizyonumuz</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Ankara&apos;nın önde gelen veteriner klinikleri arasında yer alarak, evcil hayvanların sağlığında referans noktası olmak. Sürekli gelişen teknoloji ve bilgiyle donatılmış, güvenilir ve yenilikçi bir sağlık merkezi olmak.
+                  Anka Veteriner Kliniği, kurulduğu andan itibaren sürekli gelişmeyi hedef almış, yeni güncel cihaz donanımları ile tüm hastalarına en iyi hizmeti vermeyi hedeflemiştir.
                 </p>
               </div>
             </AnimatedSection>
@@ -111,40 +118,9 @@ export default function HakkimizdaPage() {
             {values.map((v, i) => (
               <AnimatedSection key={v.title} delay={i * 0.1}>
                 <div className="bg-white rounded-2xl p-8 text-center shadow-lg border border-gray-100 hover:shadow-xl transition-shadow h-full">
-                  <div className="text-5xl mb-4">{v.icon}</div>
+                  <div className="flex justify-center mb-4">{valueIcons[i]}</div>
                   <h3 className="font-bold text-gray-900 text-lg mb-2">{v.title}</h3>
                   <p className="text-sm text-gray-600">{v.desc}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Facilities */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection>
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900">Tesislerimiz</h2>
-              <p className="mt-3 text-gray-600">Modern ekipmanlarla donatılmış tesislerimiz</p>
-            </div>
-          </AnimatedSection>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: 'Laboratuvar', image: '/images/lab/laboratuvar.jpeg', desc: 'Tam donanımlı laboratuvarımızda kan testleri, idrar analizleri ve mikrobiyolojik incelemeler yapıyoruz.' },
-              { title: 'Görüntüleme', image: '/images/gallery/ultrason.jpeg', desc: 'Ultrason ve röntgen cihazlarımız ile detaylı görüntüleme hizmeti sunuyoruz.' },
-              { title: 'Ameliyathane', image: '/images/surgery/ameliyathane-ici.jpeg', desc: 'Steril ameliyathanemizde güvenli cerrahi operasyonlar gerçekleştiriyoruz.' },
-            ].map((facility, i) => (
-              <AnimatedSection key={facility.title} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                  <div className="relative h-56">
-                    <Image src={facility.image} alt={facility.title} fill className="object-cover" />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-bold text-gray-900 text-lg mb-2">{facility.title}</h3>
-                    <p className="text-sm text-gray-600">{facility.desc}</p>
-                  </div>
                 </div>
               </AnimatedSection>
             ))}

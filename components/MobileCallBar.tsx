@@ -5,7 +5,7 @@ export default function MobileCallBar() {
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white/95 backdrop-blur-lg border-t border-gray-200 safe-area-bottom">
       <div className="flex">
         <a
-          href="tel:+903123542652"
+          href="tel:+905548550590"
           className="flex-1 flex items-center justify-center gap-2 py-3.5 text-sm font-semibold text-primary-600 hover:bg-primary-50 transition-colors"
         >
           <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -17,7 +17,7 @@ const menuItems = [
       { name: 'Müşteri Görüşleri', href: '/hakkimizda/musteri-gorusleri' },
     ],
   },
-  { name: 'Hizmetler', href: '/hizmetler' },
+  { name: 'Hizmetlerimiz', href: '/hizmetler' },
   { name: 'Ürünlerimiz', href: '/urunlerimiz' },
   { name: 'Galeri', href: '/galeri' },
   { name: 'Blog', href: '/blog' },
@@ -93,7 +93,7 @@ export default function Navigation() {
                   Anka Veteriner Kliniği
                 </span>
                 <span className="text-[10px] text-gray-500 font-medium -mt-0.5">
-                  Vet.Hek. İbrahim Yıldırım
+                  Uzm. Vet. Hek. İbrahim Yıldırım
                 </span>
                 <span className="text-[9px] text-gray-400 -mt-0.5">
                   Batıkent - Ankara
@@ -265,10 +265,10 @@ export default function Navigation() {
                     </Link>
                     <div className="mt-4 flex gap-3">
                       <a
-                        href="tel:+903123542652"
+                        href="tel:+905548550590"
                         className="flex-1 text-center px-4 py-2.5 text-sm font-medium text-primary-600 border border-primary-200 rounded-xl hover:bg-primary-50 transition-colors"
                       >
-                        📞 Ara
+                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg> Ara
                       </a>
                       <a
                         href="https://wa.me/905548550590?text=Merhaba"
@@ -276,7 +276,7 @@ export default function Navigation() {
                         rel="noopener noreferrer"
                         className="flex-1 text-center px-4 py-2.5 text-sm font-medium text-green-600 border border-green-200 rounded-xl hover:bg-green-50 transition-colors"
                       >
-                        💬 WhatsApp
+                        <svg className="w-4 h-4 inline mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg> WhatsApp
                       </a>
                     </div>
                   </div>

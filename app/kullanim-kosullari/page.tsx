@@ -82,8 +82,8 @@ export default function KullanimKosullariPage() {
               <div className="bg-gray-50 rounded-xl p-6">
                 <p className="text-gray-700"><strong>Anka Veteriner Kliniği</strong></p>
                 <p className="text-gray-600">Batıkent, Yenimahalle / Ankara</p>
-                <p className="text-gray-600">📞 (0312) 354 26 52</p>
-                <p className="text-gray-600">✉️ info@batikentveteriner.com</p>
+                <p className="text-gray-600">Tel: (0312) 354 26 52</p>
+                <p className="text-gray-600">E-posta: info@batikentveteriner.com</p>
               </div>
             </div>
           </AnimatedSection>

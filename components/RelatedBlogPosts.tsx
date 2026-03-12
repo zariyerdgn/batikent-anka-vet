@@ -4,7 +4,6 @@ interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
-  emoji: string;
   category: string;
 }
 
@@ -28,7 +27,6 @@ export default function RelatedBlogPosts({ currentSlug, posts }: RelatedBlogPost
             href={`/blog/${post.slug}`}
             className="block p-4 bg-gray-50 rounded-xl hover:bg-primary-50 hover:border-primary-200 border border-gray-100 transition-all group"
           >
-            <div className="text-2xl mb-2">{post.emoji}</div>
             <h4 className="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors text-sm line-clamp-2">
               {post.title}
             </h4>

@@ -82,7 +82,7 @@ export default function SikSorulanSorularPage() {
       <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <div className="text-5xl mb-4">❓</div>
+            <svg className="w-12 h-12 text-white mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Sık Sorulan Sorular</h1>
             <p className="text-lg text-primary-100 max-w-2xl mx-auto">Merak ettiğiniz tüm sorulara cevaplar</p>
           </AnimatedSection>
@@ -116,7 +116,7 @@ export default function SikSorulanSorularPage() {
               <p className="text-gray-600 mb-6">Cevabını bulamadığınız sorular için bize ulaşabilirsiniz.</p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link href="/iletisim" className="px-8 py-4 bg-primary-500 text-white font-bold rounded-xl hover:bg-primary-600 transition-colors shadow-lg text-lg">İletişim</Link>
-                <a href="tel:+903123542652" className="px-8 py-4 bg-white text-primary-600 font-bold rounded-xl hover:bg-gray-50 transition-colors border border-primary-200 text-lg">📞 (0312) 354 26 52</a>
+                <a href="tel:+903123542652" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary-600 font-bold rounded-xl hover:bg-gray-50 transition-colors border border-primary-200 text-lg"><svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg> (0312) 354 26 52</a>
               </div>
             </div>
           </AnimatedSection>

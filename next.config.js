@@ -16,7 +16,7 @@ const nextConfig = {
     SITE_URL: 'https://batikentveteriner.com',
     BUSINESS_NAME: 'ANKA Veteriner Kliniği',
     BUSINESS_PHONE: '(0312) 354 26 52',
-    BUSINESS_EMAIL: 'info@batikentveteriner.com',
+    BUSINESS_EMAIL: 'ankavet06@gmail.com',
     WHATSAPP_NUMBER: '905548550590',
   },
   async headers() {

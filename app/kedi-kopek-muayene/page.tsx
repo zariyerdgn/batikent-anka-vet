@@ -36,7 +36,7 @@ export default function KediKopekMuayenePage() {
       <section className="relative py-20 bg-gradient-to-br from-blue-600 to-primary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <svg className="w-12 h-12 text-white mx-auto mb-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 18c-2.21 0-4-1.79-4-4 0-1.66 2-5 4-5s4 3.34 4 5c0 2.21-1.79 4-4 4zm-3.5-9C7.67 9 7 8.33 7 7.5S7.67 6 8.5 6 10 6.67 10 7.5 9.33 9 8.5 9zm7 0c-.83 0-1.5-.67-1.5-1.5S14.67 6 15.5 6 17 6.67 17 7.5 16.33 9 15.5 9zm-10 3c-.83 0-1.5-.67-1.5-1.5S4.67 8 5.5 8 7 8.67 7 9.5 6.33 12 5.5 12zm13 0c-.83 0-1.5-.67-1.5-1.5S17.67 8 18.5 8 20 8.67 20 9.5 19.33 12 18.5 12z" /></svg>
+            <i className="fa-solid fa-paw text-5xl text-white mx-auto mb-4" />
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Kedi & Köpek Muayene</h1>
             <p className="text-lg text-blue-100 max-w-2xl mx-auto">Dostlarınızın sağlığı için kapsamlı veteriner muayenesi</p>
           </AnimatedSection>

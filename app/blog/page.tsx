@@ -153,7 +153,7 @@ export default function BlogPage() {
   return (
     <>
       <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800 overflow-hidden">
-        <PawPattern className="text-white opacity-40" />
+        <PawPattern variant="light" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Blog</h1>
@@ -163,7 +163,7 @@ export default function BlogPage() {
       </section>
 
       <section className="relative py-20 overflow-hidden">
-        <PawPattern className="text-primary-300" />
+        <PawPattern />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
             <BlogFilter categories={categories} active={active} onChange={setActive} />

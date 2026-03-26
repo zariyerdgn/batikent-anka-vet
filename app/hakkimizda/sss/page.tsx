@@ -80,7 +80,7 @@ export default function SSSPage() {
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Hakkımızda', href: '/hakkimizda' }, { name: 'SSS', href: '/hakkimizda/sss' }]} />
 
       <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800 overflow-hidden">
-        <PawPattern className="text-white opacity-40" />
+        <PawPattern variant="light" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Sıkça Sorulan Sorular</h1>
@@ -90,7 +90,7 @@ export default function SSSPage() {
       </section>
 
       <section className="relative py-20 overflow-hidden">
-        <PawPattern className="text-primary-300" />
+        <PawPattern />
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-3">
             {faqs.map((faq, i) => (

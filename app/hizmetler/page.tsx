@@ -231,7 +231,7 @@ export default function HizmetlerPage() {
 
       {/* Hero */}
       <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800 overflow-hidden">
-        <PawPattern className="text-white opacity-40" />
+        <PawPattern variant="light" />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-40 h-40 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-60 h-60 bg-white rounded-full blur-3xl" />
@@ -248,7 +248,7 @@ export default function HizmetlerPage() {
 
       {/* Services Accordion */}
       <section className="relative py-20 overflow-hidden">
-        <PawPattern className="text-primary-300" />
+        <PawPattern />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-12">

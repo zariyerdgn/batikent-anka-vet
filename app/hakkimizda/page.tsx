@@ -40,7 +40,7 @@ export default function HakkimizdaPage() {
 
       {/* Hero */}
       <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800 overflow-hidden">
-        <PawPattern className="text-white opacity-40" />
+        <PawPattern variant="light" />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 right-10 w-60 h-60 bg-white rounded-full blur-3xl" />
         </div>
@@ -56,7 +56,7 @@ export default function HakkimizdaPage() {
 
       {/* Story */}
       <section className="relative py-20 overflow-hidden">
-        <PawPattern className="text-primary-300" />
+        <PawPattern />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection direction="left">
@@ -92,7 +92,7 @@ export default function HakkimizdaPage() {
 
       {/* Mission & Vision */}
       <section className="relative py-20 overflow-hidden">
-        <PawPattern className="text-primary-200" />
+        <PawPattern />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8">
             <AnimatedSection direction="left">

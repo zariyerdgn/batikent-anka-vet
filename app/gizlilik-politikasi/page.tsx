@@ -27,7 +27,7 @@ export default function GizlilikPolitikasiPage() {
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Giriş</h2>
               <p className="text-gray-600 mb-6">
-                Anka Veteriner Kliniği (&quot;Klinik&quot;, &quot;biz&quot;, &quot;bizim&quot;) olarak, web sitemizi (batikentveteriner.com) ziyaret eden kullanıcıların (&quot;siz&quot;, &quot;sizin&quot;) gizliliğini korumayı taahhüt ediyoruz. Bu gizlilik politikası, kişisel verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklamaktadır.
+                Anka Veteriner Kliniği (&quot;Klinik&quot;, &quot;biz&quot;, &quot;bizim&quot;) olarak, web sitemizi (batikentankavet.com) ziyaret eden kullanıcıların (&quot;siz&quot;, &quot;sizin&quot;) gizliliğini korumayı taahhüt ediyoruz. Bu gizlilik politikası, kişisel verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklamaktadır.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Toplanan Bilgiler</h2>
@@ -84,7 +84,7 @@ export default function GizlilikPolitikasiPage() {
                 <p className="text-gray-700"><strong>Anka Veteriner Kliniği</strong></p>
                 <p className="text-gray-600">Batıkent, Yenimahalle / Ankara</p>
                 <p className="text-gray-600">Tel: (0312) 354 26 52</p>
-                <p className="text-gray-600">E-posta: info@batikentveteriner.com</p>
+                <p className="text-gray-600">E-posta: info@batikentankavet.com</p>
               </div>
             </div>
           </AnimatedSection>

@@ -128,7 +128,7 @@ export default async function BolgeDetailPage({ params }: { params: Params }) {
             description: `${loc.name} bölgesinde veteriner hizmetleri`,
             areaServed: { '@type': 'AdministrativeArea', name: loc.name },
             telephone: '+903123542652',
-            url: `https://batikentveteriner.com/bolge/${slug}`,
+            url: `https://batikentankavet.com/bolge/${slug}`,
           }),
         }}
       />

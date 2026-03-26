@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: isTest ? undefined : '/',
       disallow: isTest ? '/' : ['/api/', '/_next/'],
     },
-    sitemap: 'https://batikentveteriner.com/sitemap.xml',
+    sitemap: 'https://batikentankavet.com/sitemap.xml',
   };
 }

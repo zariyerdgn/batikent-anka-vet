@@ -15,7 +15,7 @@ export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.name,
-      item: `https://batikentveteriner.com${item.href}`,
+      item: `https://batikentankavet.com${item.href}`,
     })),
   };
 

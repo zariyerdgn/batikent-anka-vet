@@ -14,7 +14,7 @@ const blogSlugs = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://batikentveteriner.com';
+  const baseUrl = 'https://batikentankavet.com';
 
   const staticPages = [
     '', '/hakkimizda', '/hakkimizda/ekibimiz', '/hakkimizda/sss', '/hakkimizda/musteri-gorusleri',

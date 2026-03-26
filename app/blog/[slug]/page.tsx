@@ -515,7 +515,7 @@ export default async function BlogDetailPage({ params }: { params: Params }) {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="mb-6">
-              <ShareButton title={post.title} url={`https://batikentveteriner.com/blog/${slug}`} />
+              <ShareButton title={post.title} url={`https://batikentankavet.com/blog/${slug}`} />
             </div>
 
             <article className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600 prose-a:text-primary-600">

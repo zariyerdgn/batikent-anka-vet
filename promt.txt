@@ -45,7 +45,7 @@ SAYFA 3 - DİĞER DEĞİŞİKLİKLER:
 SAYFA 4 - VİZYON VE İLETİŞİM:
 - Vizyonumuz: "Anka Veteriner Kliniği, kurulduğu andan itibaren sürekli gelişmeyi hedef almış, yeni güncel cihaz donanımları ile tüm hastalarına en iyi hizmeti vermeyi hedeflemiştir."
 - Acil numarası cep telefonu olsun: 0554 855 05 90
-- E-posta: ankavet06@gmail.com (info@batikentveteriner.com yanlış, o isimde başka klinik var)
+- E-posta: ankavet06@gmail.com (info@batikentankavet.com yanlış, o isimde başka klinik var)
 - Telefon numaraları:
     * Cep: 0554 855 05 90
     * Sabit: 0312 354 26 52
@@ -93,7 +93,7 @@ Alan	Değer
 İşletme Adı	Anka Veteriner Kliniği
 Konum	Batıkent, Yenimahalle / Ankara
 Bölge	Ankara
-Domain	batikentveteriner.com
+Domain	batikentankavet.com
 Telefon	[(0312) 354 26 52]
 WhatsApp	[0554 855 0590 
 E-posta	[E-POSTA GİRİLECEK]
@@ -112,7 +112,7 @@ Hizmet Bölgeleri (Batıkent Merkezli):
 Yerköy ve Yozgat ilçeleri yerine Ankara/Batıkent çevresindeki semtleri ve ilçeleri kullan: - Batıkent (Merkez) - Yenimahalle - Etimesgut - Sincan - Keçiören - Demetevler - Ostim - Eryaman - Çayyolu (gerekirse genişlet)
 Çevresel Değişkenler (next.config.js env):
 env: {
-  SITE_URL: 'https://batikentveteriner.com',
+  SITE_URL: 'https://batikentankavet.com',
   BUSINESS_NAME: 'ANKA Veteriner Kliniği',
   BUSINESS_PHONE: '[TELEFON]',
   BUSINESS_EMAIL: '[EMAIL]',
@@ -494,7 +494,7 @@ title: {
 }
 description: 'Batıkent ve Ankara'da büyükbaş, küçükbaş ve pet veteriner hizmetleri...'
 keywords: ['Batıkent veteriner', 'Ankara veteriner', 'Batıkent büyükbaş veteriner', ...]
-metadataBase: new URL('https://batikentveteriner.com')
+metadataBase: new URL('https://batikentankavet.com')
 7.2 Schema.org Markup (layout.tsx - Çoklu schema)
 Birebir aynı yapıda, Batıkent bilgileriyle:
 1. VeterinaryCare + LocalBusiness + MedicalBusiness schema

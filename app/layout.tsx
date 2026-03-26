@@ -17,7 +17,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://batikentveteriner.com'),
+  metadataBase: new URL('https://batikentankavet.com'),
   title: {
     default: 'Batıkent Veteriner | Anka Veteriner Kliniği - Ankara Pet & Evcil Hayvan',
     template: '%s | Anka Veteriner Kliniği Batıkent',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    url: 'https://batikentveteriner.com',
+    url: 'https://batikentankavet.com',
     siteName: 'Anka Veteriner Kliniği Batıkent',
     title: 'Batıkent Veteriner | Anka Veteriner Kliniği',
     description: 'Batıkent ve Ankara\'da profesyonel veteriner hizmetleri. Evcil hayvan sağlığı.',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     index: process.env.NEXT_PUBLIC_ENVIRONMENT !== 'test',
     follow: process.env.NEXT_PUBLIC_ENVIRONMENT !== 'test',
   },
-  alternates: { canonical: 'https://batikentveteriner.com' },
+  alternates: { canonical: 'https://batikentankavet.com' },
   other: {
     'geo.region': 'TR-06',
     'geo.placename': 'Batıkent, Ankara',
@@ -61,11 +61,11 @@ const schemaData = {
   '@graph': [
     {
       '@type': ['VeterinaryCare', 'LocalBusiness', 'MedicalBusiness'],
-      '@id': 'https://batikentveteriner.com/#organization',
+      '@id': 'https://batikentankavet.com/#organization',
       name: 'Anka Veteriner Kliniği',
       alternateName: 'Batıkent Anka Veteriner',
       description: 'Batıkent ve Ankara genelinde evcil hayvan veteriner hizmetleri.',
-      url: 'https://batikentveteriner.com',
+      url: 'https://batikentankavet.com',
       telephone: '+903123542652',
       email: 'ankavet06@gmail.com',
       priceRange: '₺₺',
@@ -113,7 +113,7 @@ const schemaData = {
       },
       aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '200', bestRating: '5' },
       isAcceptingNewPatients: true,
-      image: 'https://batikentveteriner.com/images/hero/klinik-dis.jpeg',
+      image: 'https://batikentankavet.com/images/hero/klinik-dis.jpeg',
     },
     {
       '@type': 'FAQPage',
@@ -126,11 +126,11 @@ const schemaData = {
     },
     {
       '@type': 'WebSite',
-      url: 'https://batikentveteriner.com',
+      url: 'https://batikentankavet.com',
       name: 'Anka Veteriner Kliniği Batıkent',
       potentialAction: {
         '@type': 'SearchAction',
-        target: 'https://batikentveteriner.com/blog?q={search_term_string}',
+        target: 'https://batikentankavet.com/blog?q={search_term_string}',
         'query-input': 'required name=search_term_string',
       },
     },

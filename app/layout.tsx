@@ -71,7 +71,7 @@ const schemaData = {
       priceRange: '₺₺',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Batıkent',
+        streetAddress: 'Kentkoop Mh 1859. Cadde, Batıkent Blv. Özgünkent Sitesi No:22C D:22.Blok',
         addressLocality: 'Yenimahalle',
         addressRegion: 'Ankara',
         postalCode: '06370',

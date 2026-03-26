@@ -9,6 +9,12 @@ RUN npm ci
 FROM node:20-alpine AS builder
 WORKDIR /app
 
+# Google Places API keys (build-time)
+ARG GOOGLE_PLACES_API_KEY
+ARG GOOGLE_PLACE_ID
+ENV GOOGLE_PLACES_API_KEY=$GOOGLE_PLACES_API_KEY
+ENV GOOGLE_PLACE_ID=$GOOGLE_PLACE_ID
+
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 

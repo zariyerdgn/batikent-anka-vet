@@ -68,7 +68,7 @@ export default function IletisimPage() {
             {/* Adres */}
             <AnimatedSection delay={0}>
               <a
-                href="https://maps.google.com/?q=Kentkoop+Mh+1859+Cadde+Batıkent+Blv+Özgünkent+Sitesi+No:22C+Yenimahalle+Ankara"
+                href="https://www.google.com/maps/search/Anka+Veteriner+Klini%C4%9Fi+Bat%C4%B1kent+Ankara"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:border-primary-200 transition-all h-full"
@@ -79,11 +79,13 @@ export default function IletisimPage() {
                 <div>
                   <h3 className="font-bold text-gray-900 text-base mb-1">Adres</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    Kentkoop Mh. 1859. Cadde,
+                    Kentkoop Mh 1859. Cadde,
                     <br />
                     Batıkent Blv. Özgünkent Sitesi
                     <br />
-                    No:22C, Yenimahalle / Ankara
+                    No:22C D:22.Blok, 06370
+                    <br />
+                    Yenimahalle/Ankara
                   </p>
                 </div>
               </a>
@@ -325,7 +327,7 @@ export default function IletisimPage() {
                     </div>
                   </div>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.5!2d32.6234!3d39.9725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d33e8c2f3de577%3A0xbe308f3c2a4c7e95!2sAnka%20Veteriner%20Klini%C4%9Fi!5e0!3m2!1str!2str!4v1"
+                    src="https://www.google.com/maps?q=Anka+Veteriner+Klini%C4%9Fi+Bat%C4%B1kent+Ankara&output=embed&hl=tr"
                     width="100%"
                     height="320"
                     style={{ border: 0 }}

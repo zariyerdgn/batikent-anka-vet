@@ -80,13 +80,13 @@ export default function MusteriGorusleriPage() {
           <AnimatedSection>
             <div className="text-center mb-10">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Bizi Ziyaret Edin</h2>
-              <p className="text-gray-600">Kentkoop Mh 1859. Cadde, Batıkent Blv. Özgünkent Sitesi No:22C, Yenimahalle/Ankara</p>
+              <p className="text-gray-600">Kentkoop Mh 1859. Cadde, Batıkent Blv. Özgünkent Sitesi No:22C D:22.Blok, 06370 Yenimahalle/Ankara</p>
             </div>
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.5!2d32.7329!3d39.9743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU4JzI3LjUiTiAzMsKwNDMnNTguNCJF!5e0!3m2!1str!2str!4v1&q=Anka+Veteriner+Klini%C4%9Fi+Bat%C4%B1kent"
+                src="https://www.google.com/maps?q=Anka+Veteriner+Klini%C4%9Fi+Bat%C4%B1kent+Ankara&output=embed&hl=tr"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}

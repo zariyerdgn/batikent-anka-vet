@@ -4,6 +4,35 @@ import { useState } from 'react';
 import Image from 'next/image';
 import AnimatedSection from '@/components/AnimatedSection';
 
+const altTextMap: Record<string, string> = {
+  clinic: 'Anka Veteriner Kliniği Batıkent',
+  team: 'Anka Veteriner hekim kadrosu',
+  hero: 'Anka Veteriner Kliniği dış görünüm',
+  surgery: 'Ameliyathane ve cerrahi operasyon',
+  lab: 'Veteriner laboratuvar',
+  equipment: 'Profesyonel veteriner ekipman',
+  gallery: 'Klinik görüntüleme',
+  'agiz-dis': 'Ağız ve diş sağlığı tedavisi',
+  'eklem-cerrahi': 'Eklem cerrahisi operasyonu',
+  ekokardiyografi: 'Ekokardiyografi kalp ultrason',
+  endoskopi: 'Endoskopi işlemi',
+  goz: 'Göz muayenesi ve tedavisi',
+  laboratuvar: 'Laboratuvar tetkikleri',
+  operasyon: 'Cerrahi operasyon',
+  sitoloji: 'Sitolojik inceleme',
+  ultrasonografi: 'Ultrasonografi görüntüleme',
+  xray: 'Röntgen görüntüleme',
+};
+
+function getAltText(src: string): string {
+  const parts = src.split('/').filter(Boolean);
+  const filename = parts[parts.length - 1].replace(/\.\w+$/, '').replace(/-\d+$/, '').replace(/-/g, ' ');
+  for (const folder of parts) {
+    if (altTextMap[folder]) return `${altTextMap[folder]} - ${filename}`;
+  }
+  return `Anka Veteriner Kliniği - ${filename}`;
+}
+
 const galleryImages = [
   { src: '/images/clinic/anka-vet-ekip.png' },
   { src: '/images/team/ibrahim-yildirim-2.jpeg' },
@@ -112,7 +141,7 @@ export default function GaleriPage() {
             {galleryImages.map((img, i) => (
               <AnimatedSection key={img.src} delay={i * 0.02}>
                 <button onClick={() => setLightbox(i)} className="relative aspect-square rounded-xl overflow-hidden group cursor-pointer w-full">
-                  <Image src={img.src} alt={`Anka Veteriner Kliniği - ${i + 1}`} fill className="object-cover group-hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" />
+                  <Image src={img.src} alt={getAltText(img.src)} fill className="object-cover group-hover:scale-110 transition-transform duration-500" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                 </button>
               </AnimatedSection>
@@ -127,7 +156,7 @@ export default function GaleriPage() {
           <button onClick={(e) => { e.stopPropagation(); setLightbox(Math.max(0, lightbox - 1)); }} className="absolute left-4 text-white text-4xl hover:text-gray-300 z-10">&lsaquo;</button>
           <button onClick={(e) => { e.stopPropagation(); setLightbox(Math.min(galleryImages.length - 1, lightbox + 1)); }} className="absolute right-4 text-white text-4xl hover:text-gray-300 z-10">&rsaquo;</button>
           <div className="relative w-full max-w-4xl aspect-video" onClick={(e) => e.stopPropagation()}>
-            <Image src={galleryImages[lightbox].src} alt={`Anka Veteriner Kliniği - ${lightbox + 1}`} fill className="object-contain" sizes="90vw" />
+            <Image src={galleryImages[lightbox].src} alt={getAltText(galleryImages[lightbox].src)} fill className="object-contain" sizes="90vw" />
           </div>
         </div>
       )}

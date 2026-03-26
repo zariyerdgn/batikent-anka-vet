@@ -476,7 +476,16 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title: post.title,
     description: post.excerpt,
-    openGraph: { title: post.title, description: post.excerpt, type: 'article', locale: 'tr_TR' },
+    keywords: `${post.category}, veteriner, evcil hayvan, ${post.title.split(':')[0]}, Batıkent veteriner`,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: 'article',
+      locale: 'tr_TR',
+      publishedTime: post.date,
+      authors: [post.author],
+    },
+    alternates: { canonical: `https://batikentankavet.com/blog/${slug}` },
   };
 }
 
@@ -489,9 +498,29 @@ export default async function BlogDetailPage({ params }: { params: Params }) {
   const post = blogData[slug];
   if (!post) notFound();
 
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    author: { '@type': 'Person', name: post.author },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Anka Veteriner Kliniği',
+      url: 'https://batikentankavet.com',
+    },
+    datePublished: post.date,
+    dateModified: post.date,
+    mainEntityOfPage: `https://batikentankavet.com/blog/${slug}`,
+    articleSection: post.category,
+    wordCount: post.content.split(/\s+/).length,
+    inLanguage: 'tr',
+  };
+
   return (
     <>
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Blog', href: '/blog' }, { name: post.title, href: `/blog/${slug}` }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }} />
 
       <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

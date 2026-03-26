@@ -7,6 +7,14 @@ import { locations } from '@/lib/locations';
 export const metadata: Metadata = {
   title: 'Hizmet Bölgelerimiz',
   description: 'Anka Veteriner Kliniği Batıkent merkez olmak üzere Ankara genelinde veteriner hizmeti sunmaktadır.',
+  keywords: 'Batıkent veteriner, Yenimahalle veteriner, Etimesgut veteriner, Sincan veteriner, Keçiören veteriner, Ankara veteriner',
+  openGraph: {
+    title: 'Hizmet Bölgelerimiz | Anka Veteriner Kliniği Batıkent',
+    description: 'Batıkent merkez, Ankara genelinde veteriner hizmeti sunuyoruz.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/bolge' },
 };
 
 export default function BolgePage() {

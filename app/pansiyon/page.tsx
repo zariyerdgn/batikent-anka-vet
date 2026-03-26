@@ -8,6 +8,14 @@ import RelatedServices from '@/components/RelatedServices';
 export const metadata: Metadata = {
   title: 'Pet Pansiyon | Evcil Hayvan Oteli Batıkent',
   description: 'Batıkent Ankara evcil hayvan pansiyonu. Güvenli, temiz, sevgi dolu ortam. Kedi ve köpek pansiyonu. (0312) 354 26 52',
+  keywords: 'pet pansiyon, kedi pansiyonu, köpek pansiyonu, evcil hayvan oteli, Batıkent pansiyon, hayvan bakım evi',
+  openGraph: {
+    title: 'Pet Pansiyon | Anka Veteriner Kliniği Batıkent',
+    description: 'Güvenli, temiz ve sevgi dolu ortamda evcil hayvan pansiyonu.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/pansiyon' },
 };
 
 export default function PansiyonPage() {
@@ -23,6 +31,7 @@ export default function PansiyonPage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Hizmetler', href: '/hizmetler' }, { name: 'Pansiyon', href: '/pansiyon' }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Pet Pansiyon', description: 'Evcil hayvan pansiyon ve bakım hizmeti', url: 'https://batikentankavet.com/pansiyon', provider: { '@type': 'VeterinaryCare', name: 'Anka Veteriner Kliniği', telephone: '+903123542652', address: { '@type': 'PostalAddress', addressLocality: 'Batıkent, Yenimahalle', addressRegion: 'Ankara', addressCountry: 'TR' } }, specialty: 'Pet Pansiyon ve Bakım' }) }} />
 
       <section className="relative py-20 bg-gradient-to-br from-amber-500 to-orange-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

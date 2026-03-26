@@ -9,6 +9,14 @@ import PawPattern from '@/components/PawPattern';
 export const metadata: Metadata = {
   title: 'Hakkımızda - Bizi Tanıyın',
   description: 'Anka Veteriner Kliniği Batıkent. Uzman veteriner hekimlerimiz, modern tesislerimiz ve hayvan sağlığına olan tutkumuz hakkında bilgi edinin.',
+  keywords: 'Anka Veteriner, Batıkent veteriner kliniği, hakkımızda, veteriner hekim, klinik tanıtım',
+  openGraph: {
+    title: 'Hakkımızda | Anka Veteriner Kliniği Batıkent',
+    description: 'Uzman kadromuz ve modern tesislerimizle tanışın.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/hakkimizda' },
 };
 
 const values = [

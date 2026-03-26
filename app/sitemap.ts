@@ -11,6 +11,12 @@ const blogSlugs = [
   'kuslarda-tuy-dokulmesi',
   'evcil-hayvanlarda-obezite',
   'kedilerde-tirnak-bakimi',
+  'kopeklerde-parvovirus-tedavisi',
+  'kedilerde-bobrek-yetmezligi',
+  'veteriner-cerrahide-ortopedik-yaklasimlar',
+  'evcil-hayvanlarda-anestezi-guvenligi',
+  'kopeklerde-kalp-hastaliklari',
+  'yurt-disi-cikis-islemleri',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

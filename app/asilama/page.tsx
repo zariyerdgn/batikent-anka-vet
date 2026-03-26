@@ -7,6 +7,14 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 export const metadata: Metadata = {
   title: 'Aşılama Hizmetleri | Kedi Köpek Aşıları',
   description: 'Batıkent Ankara\'da kedi ve köpek aşılama hizmetleri. Karma aşı, kuduz aşısı, iç-dış parazit. (0312) 354 26 52',
+  keywords: 'kedi aşısı, köpek aşısı, karma aşı, kuduz aşısı, Batıkent aşılama, hayvan aşı takvimi, yavru aşısı',
+  openGraph: {
+    title: 'Aşılama Hizmetleri | Anka Veteriner Kliniği Batıkent',
+    description: 'Kedi ve köpek aşılama: karma, kuduz, lösemi, iç-dış parazit.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/asilama' },
 };
 
 export default function AsilamaPage() {
@@ -27,6 +35,7 @@ export default function AsilamaPage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Hizmetler', href: '/hizmetler' }, { name: 'Aşılama', href: '/asilama' }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Aşılama Hizmetleri', description: 'Kedi ve köpek aşılama hizmetleri', url: 'https://batikentankavet.com/asilama', provider: { '@type': 'VeterinaryCare', name: 'Anka Veteriner Kliniği', telephone: '+903123542652', address: { '@type': 'PostalAddress', addressLocality: 'Batıkent, Yenimahalle', addressRegion: 'Ankara', addressCountry: 'TR' } }, specialty: 'Aşılama ve Koruyucu Sağlık' }) }} />
 
       <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

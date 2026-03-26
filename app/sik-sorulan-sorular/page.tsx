@@ -7,6 +7,14 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Sık Sorulan Sorular (SSS)',
   description: 'Evcil hayvan sahiplerinin veteriner hekimlere en çok sorduğu sorular. Aşılama, kısırlaştırma, beslenme, parazit koruması ve daha fazlası.',
+  keywords: 'veteriner SSS, sık sorulan sorular, kedi bakımı, köpek bakımı, aşılama sorulan sorular, kısırlaştırma sorulan sorular',
+  openGraph: {
+    title: 'Sık Sorulan Sorular | Anka Veteriner Kliniği Batıkent',
+    description: 'Evcil hayvan sahiplerinin en çok sorduğu sorular ve uzman cevapları.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/sik-sorulan-sorular' },
 };
 
 const sorular = [

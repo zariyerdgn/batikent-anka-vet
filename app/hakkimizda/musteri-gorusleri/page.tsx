@@ -6,6 +6,14 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 export const metadata: Metadata = {
   title: 'Müşteri Görüşleri | Google Yorumları',
   description: 'Anka Veteriner Kliniği Batıkent müşteri yorumları ve değerlendirmeleri. Google üzerinden doğrulanmış gerçek yorumlarımızı inceleyin.',
+  keywords: 'veteriner yorumları, müşteri görüşleri, Google değerlendirme, Batıkent veteriner yorum',
+  openGraph: {
+    title: 'Müşteri Görüşleri | Anka Veteriner Kliniği Batıkent',
+    description: 'Google üzerinden doğrulanmış müşteri yorumlarımızı inceleyin.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/hakkimizda/musteri-gorusleri' },
 };
 
 const WRITE_REVIEW_URL = "https://www.google.com/search?sca_esv=d0d51c5094d38dd2&sxsrf=ANbL-n788bgKOM8T5iyWVkPsPA1aQKB8JQ:1772924380319&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOeRroW35CWlQblTMpIRTqXlv2ifEYjEoJSzDlecC2PleJJ3JifggUAEeBVIOr3rW2pI21Vs7qIyEoL2YGMaAkXHgajvigQUg99xS0m-6-C2h-e_iHa3gUgEgupTO_G0UKJRb7JY%3D&q=Bat%C4%B1kent+Anka+Veteriner+Klini%C4%9Fi+Yorumlar&sa=X&ved=2ahUKEwiV95v_8Y6TAxWj5AIHHYFFG3gQ0bkNegQIIxAF&biw=1470&bih=772&dpr=2";

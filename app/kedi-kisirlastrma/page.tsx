@@ -8,6 +8,14 @@ import RelatedServices from '@/components/RelatedServices';
 export const metadata: Metadata = {
   title: 'Kedi Kısırlaştırma | Uygun Fiyat & Profesyonel Hizmet',
   description: 'Batıkent Ankara kedi kısırlaştırma ameliyatı. Deneyimli cerrahlar, steril ortam, post-op bakım. (0312) 354 26 52 ile randevu alın.',
+  keywords: 'kedi kısırlaştırma, kedi kısırlaştırma fiyat, Batıkent kedi ameliyat, kedi sterilizasyon, dişi kedi kısırlaştırma, erkek kedi kısırlaştırma',
+  openGraph: {
+    title: 'Kedi Kısırlaştırma | Anka Veteriner Kliniği Batıkent',
+    description: 'Güvenli ameliyat, hızlı iyileşme. Deneyimli cerrahlar ile kedi kısırlaştırma.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/kedi-kisirlastrma' },
 };
 
 export default function KediKisirlastrmaPage() {
@@ -21,6 +29,7 @@ export default function KediKisirlastrmaPage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Hizmetler', href: '/hizmetler' }, { name: 'Kedi Kısırlaştırma', href: '/kedi-kisirlastrma' }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Kedi Kısırlaştırma', description: 'Profesyonel kedi kısırlaştırma ameliyatı', url: 'https://batikentankavet.com/kedi-kisirlastrma', provider: { '@type': 'VeterinaryCare', name: 'Anka Veteriner Kliniği', telephone: '+903123542652', address: { '@type': 'PostalAddress', addressLocality: 'Batıkent, Yenimahalle', addressRegion: 'Ankara', addressCountry: 'TR' } }, specialty: 'Kedi Kısırlaştırma Cerrahisi' }) }} />
 
       <section className="relative py-20 bg-gradient-to-br from-pink-500 to-primary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

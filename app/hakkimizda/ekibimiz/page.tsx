@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   title: 'Ekibimiz - Uzman Veteriner Hekim Kadromuz',
   description:
     'Anka Veteriner Kliniği Batıkent uzman veteriner hekim kadrosu. Uzm. Vet. Hek. İbrahim Yıldırım, Uzm. Vet. Hek. Özge Yıldırım, Vet. Hek. Emel Eda Şahin.',
+  keywords: 'veteriner hekim, İbrahim Yıldırım, Özge Yıldırım, Emel Eda Şahin, Batıkent veteriner ekibi',
+  openGraph: {
+    title: 'Ekibimiz | Anka Veteriner Kliniği Batıkent',
+    description: 'Uzman veteriner hekim kadromuzla tanışın.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/hakkimizda/ekibimiz' },
 };
 
 const team = [

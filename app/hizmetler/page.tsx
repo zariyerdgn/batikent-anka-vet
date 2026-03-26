@@ -8,6 +8,14 @@ import PawPattern from '@/components/PawPattern';
 export const metadata: Metadata = {
   title: 'Hizmetlerimiz',
   description: 'Batıkent ve Ankara genelinde evcil hayvan veteriner hizmetleri. Acil 7/24, cerrahi, dahiliye, dermatoloji, fizik tedavi ve daha fazlası.',
+  keywords: 'veteriner hizmetleri, Batıkent veteriner, acil veteriner, cerrahi, dahiliye, aşılama, kısırlaştırma, röntgen, ultrason',
+  openGraph: {
+    title: 'Veteriner Hizmetlerimiz | Anka Veteriner Kliniği Batıkent',
+    description: 'Acil 7/24, cerrahi, dahiliye, dermatoloji ve daha fazlası.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/hizmetler' },
 };
 
 const hizmetler = [

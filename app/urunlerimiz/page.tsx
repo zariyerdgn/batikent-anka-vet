@@ -6,6 +6,14 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 export const metadata: Metadata = {
   title: 'Ürünlerimiz | Kedi Köpek Mama & Bakım Ürünleri',
   description: 'Batıkent Ankara veteriner kliniği ürünleri. Kedi köpek mama, vitamin, bakım ürünleri, medikal ürünler. (0312) 354 26 52',
+  keywords: 'kedi mama, köpek mama, Royal Canin, Hills, evcil hayvan ürünleri, vitamin, bakım ürünleri, Batıkent veteriner',
+  openGraph: {
+    title: 'Ürünlerimiz | Anka Veteriner Kliniği Batıkent',
+    description: 'Kedi köpek mama, vitamin ve bakım ürünleri.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/urunlerimiz' },
 };
 
 export default function UrunlerimizPage() {

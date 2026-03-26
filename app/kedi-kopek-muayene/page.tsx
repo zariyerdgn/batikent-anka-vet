@@ -8,6 +8,14 @@ import RelatedServices from '@/components/RelatedServices';
 export const metadata: Metadata = {
   title: 'Kedi & Köpek Muayene | Batıkent Veteriner',
   description: 'Batıkent Ankara\'da kedi ve köpek muayene hizmeti. Genel sağlık kontrolü, aşılama, tedavi. (0312) 354 26 52',
+  keywords: 'kedi muayene, köpek muayene, veteriner muayene, sağlık kontrolü, Batıkent kedi veteriner, Batıkent köpek veteriner',
+  openGraph: {
+    title: 'Kedi & Köpek Muayene | Anka Veteriner Kliniği Batıkent',
+    description: 'Genel sağlık kontrolü, aşılama, laboratuvar ve görüntüleme hizmetleri.',
+    type: 'website',
+    locale: 'tr_TR',
+  },
+  alternates: { canonical: 'https://batikentankavet.com/kedi-kopek-muayene' },
 };
 
 export default function KediKopekMuayenePage() {
@@ -23,6 +31,7 @@ export default function KediKopekMuayenePage() {
   return (
     <>
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Hizmetler', href: '/hizmetler' }, { name: 'Kedi & Köpek Muayene', href: '/kedi-kopek-muayene' }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Kedi & Köpek Muayene', description: 'Kedi ve köpek genel sağlık muayenesi', url: 'https://batikentankavet.com/kedi-kopek-muayene', provider: { '@type': 'VeterinaryCare', name: 'Anka Veteriner Kliniği', telephone: '+903123542652', address: { '@type': 'PostalAddress', addressLocality: 'Batıkent, Yenimahalle', addressRegion: 'Ankara', addressCountry: 'TR' } }, specialty: 'Genel Muayene ve Tedavi' }) }} />
 
       <section className="relative py-20 bg-gradient-to-br from-blue-600 to-primary-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

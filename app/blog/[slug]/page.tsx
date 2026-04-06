@@ -8,6 +8,203 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 const blogData: Record<string, { title: string; content: string; category: string; date: string; readTime: string; author: string; excerpt: string }> = {
 
+  'kedilerde-kalp-hastaliklari': {
+    title: 'Kedilerde Sık Görülen Kalp Hastalıkları: Belirtiler, Türler ve Erken Teşhis',
+    content: `Kalp hastalıkları kedilerde son derece sinsi ilerleyen ve genellikle ileri evrelere kadar belirgin belirti vermeyen ciddi sağlık sorunlarıdır. Uzm. Vet. Hek. İbrahim Yıldırım olarak, kedilerde kalp hastalıklarının erken teşhisinin yaşam kurtarıcı olduğunu her gün kliniğimizde deneyimliyoruz.
+
+## Kedilerde Kalp Hastalıkları Neden Sinsidir?
+
+Kediler doğaları gereği ağrı ve rahatsızlığı gizleme eğilimindedir. Bu evrimsel özellik, kalp hastalıklarının belirtilerinin fark edilmesini oldukça zorlaştırır. Bir kedi kalp yetmezliği belirtileri gösterdiğinde, hastalık genellikle ciddi bir aşamaya ilerlemiş olur. Bu nedenle düzenli veteriner kontrolleri ve erken teşhis hayati önem taşır.
+
+## Kedilerde Görülen Kalp Hastalığı Türleri
+
+### Hipertrofik Kardiyomiyopati (HCM)
+
+Kedilerde en sık görülen kalp hastalığıdır ve tüm kedi kalp hastalıklarının yaklaşık %60-70'ini oluşturur. Sol ventrikül (karıncık) duvarının anormal kalınlaşması ile karakterizedir.
+
+- Kalp kası kalınlaşır ve sertleşir
+- Kalp odacıklarının hacmi küçülür
+- Kalp yeterli kanı pompalayamaz hale gelir
+- Genetik yatkınlık önemli rol oynar
+- Maine Coon, Ragdoll, British Shorthair, Sphynx ve Persian ırkları daha yatkındır
+- Erkek kedilerde daha sık görülür
+- Genellikle 5-7 yaş arasında tanı konur ancak genç kedilerde de görülebilir
+
+### Dilate Kardiyomiyopati (DCM)
+
+Kalp odacıklarının genişlemesi ve kalp kasının zayıflaması ile karakterize bir hastalıktır.
+
+- Kalp büyür ancak pompalama gücü azalır
+- Geçmişte taurin eksikliği ile güçlü bir ilişkisi kanıtlanmıştır
+- Günümüzde kaliteli mamalardaki taurin takviyesi sayesinde görülme sıklığı azalmıştır
+- Ancak hâlâ bazı kedilerde genetik veya idiyopatik olarak ortaya çıkabilir
+
+### Restriktif Kardiyomiyopati (RCM)
+
+Kalp kasının sertleşmesi ve esnekliğini kaybetmesi sonucu kalbin yeterli kanla dolamaması durumudur.
+
+- Kalp duvarı fibrozis nedeniyle sertleşir
+- Kalp odacıkları normal boyutta olabilir ancak genişleyemez
+- Diyastolik fonksiyon bozukluğu ön plandadır
+- Tanısı zor olabilir, ekokardiyografi ile konulur
+
+### Aritojenik Sağ Ventrikül Kardiyomiyopatisi (ARVC)
+
+Sağ ventrikül kasının yağ ve fibröz doku ile yer değiştirmesi sonucu gelişen nadir bir kalp hastalığıdır.
+
+- Ritim bozuklukları sık görülür
+- Ani ölüm riski taşır
+- Tanısı oldukça güçtür
+
+### Doğuştan Kalp Hastalıkları
+
+Yavru kedilerde doğuştan yapısal kalp anomalileri görülebilir.
+
+- Ventriküler septal defekt (VSD): Karıncıklar arası delik
+- Atriyal septal defekt (ASD): Kulakçıklar arası delik
+- Patent duktus arteriozus (PDA): Doğumda kapanması gereken damar bağlantısının açık kalması
+- Aort stenozu: Aort kapağının daralması
+- Pulmoner stenoz: Akciğer arter kapağının daralması
+
+## Kedilerde Kalp Hastalığı Belirtileri
+
+### Erken Dönem Belirtileri
+
+Bu belirtiler çoğu zaman gözden kaçar ancak dikkatli sahipler fark edebilir:
+
+- Aktivite seviyesinde hafif azalma
+- Daha fazla uyuma ve dinlenme
+- Oyun sırasında çabuk yorulma
+- Nefes alıp verişte hafif hızlanma
+- Normalde aktif olan kedinin sessizleşmesi
+
+### İlerleyen Dönem Belirtileri
+
+- Nefes darlığı ve hızlı solunum (dakikada 40'ın üzerinde)
+- Ağız açık nefes alma (kedilerde acil belirti!)
+- Öksürük (kedilerde nadir, ancak kalp kaynaklı olabilir)
+- İştahsızlık ve kilo kaybı
+- Halsizlik ve letarji
+- Bayılma (senkop) atakları
+- Karın bölgesinde şişlik (asit birikimi)
+
+### Acil Belirtiler
+
+Aşağıdaki belirtilerden herhangi birini gördüğünüzde derhal veterinere başvurun:
+
+- Arka bacaklarda ani felç veya güçsüzlük (aortik tromboembolizm)
+- Arka bacaklarda soğukluk ve ağrılı çığlık atma
+- Ciddi nefes güçlüğü, morarma
+- Ağız açık, zorlu nefes alma
+- Ani çökme veya bilinç kaybı
+
+## Aortik Tromboembolizm (ATE) - Kedilere Özgü Tehlike
+
+Kalp hastalığı olan kedilerde en korkulan komplikasyonlardan biri aortik tromboembolizmdir. Kalp içinde oluşan kan pıhtısı, aortadan koparak genellikle arka bacaklara giden damarları tıkar.
+
+- Ani başlangıçlı arka bacak felci
+- Şiddetli ağrı ve çığlık atma
+- Arka bacakların soğuk ve soluk olması
+- Arka bacak nabzının alınamaması
+- Acil veteriner müdahalesi gerektirir
+- HCM'li kedilerde en sık görülür
+
+## Risk Faktörleri
+
+- Irk yatkınlığı: Maine Coon, Ragdoll, British Shorthair, Sphynx, Persian, Bengal
+- Yaş: Orta yaşlı ve yaşlı kediler daha riskli
+- Cinsiyet: Erkek kedilerde HCM daha sık
+- Genetik mutasyonlar: MYBPC3 gen mutasyonu (Maine Coon ve Ragdoll)
+- Hipertansiyon (yüksek tansiyon)
+- Hipertiroidizm (tiroid bezinin aşırı çalışması)
+- Kronik böbrek hastalığı
+- Obezite
+
+## Teşhis Yöntemleri
+
+### Fizik Muayene
+
+- Kalp oskültasyonu (stetoskop ile dinleme): Üfürüm, ritim bozukluğu, gallop ritmi
+- Solunum hızı ve kalitesinin değerlendirilmesi
+- Femoral nabız kontrolü
+- Genel durum değerlendirmesi
+
+### Ekokardiyografi (Kalp Ultrasonografisi)
+
+Kalp hastalıklarının tanısında altın standarttır.
+
+- Kalp duvar kalınlığının ölçülmesi
+- Kalp odacık boyutlarının değerlendirilmesi
+- Kalp kapak fonksiyonlarının incelenmesi
+- Kalp kasılma gücünün (ejeksiyon fraksiyonu) hesaplanması
+- Kan pıhtısı varlığının araştırılması
+- Doppler ile kan akış hızlarının ölçülmesi
+
+### Elektrokardiyografi (EKG)
+
+- Kalp ritim bozukluklarının tespiti
+- Kalp büyümesi bulguları
+- Aritmilerin sınıflandırılması
+
+### Göğüs Röntgeni
+
+- Kalp büyüklüğünün değerlendirilmesi
+- Akciğer ödemi varlığının kontrolü
+- Plevral efüzyon (göğüs boşluğunda sıvı) tespiti
+
+### Kan Tahlilleri
+
+- NT-proBNP: Kalp stresini gösteren biyobelirteç, tarama testi olarak kullanılır
+- Troponin: Kalp kası hasarını gösteren enzim
+- Tiroid hormonları: Hipertiroidizm taraması
+- Böbrek fonksiyon testleri: Eşlik eden böbrek hastalığı değerlendirmesi
+- Tam kan sayımı ve biyokimya paneli
+
+### Kan Basıncı Ölçümü
+
+Hipertansiyonun kalp üzerindeki etkisini değerlendirmek için düzenli kan basıncı ölçümü yapılır.
+
+## Korunma ve Erken Teşhis Önerileri
+
+- Yılda en az bir kez veteriner kontrolü (7 yaş üstü kedilerde 6 ayda bir)
+- Kalp oskültasyonu her muayenede yapılmalı
+- Yatkın ırklarda genetik test (MYBPC3 mutasyonu)
+- Evde solunum sayısı takibi: Kedinin dinlenirken dakikada 30'un altında nefes alması normal kabul edilir
+- Ani davranış değişikliklerine dikkat edin
+- Dengeli ve kaliteli beslenme sağlayın
+- Obeziteden kaçının
+- Stres faktörlerini minimize edin
+
+## Evde Solunum Sayısı Takibi Nasıl Yapılır?
+
+Kediniz uyurken veya dinlenirken göğüs hareketlerini sayarak solunum hızını takip edebilirsiniz:
+
+- Normal dinlenme solunum hızı: Dakikada 15-30 arası
+- Dakikada 40 ve üzeri solunum endişe vericidir
+- Birkaç gün boyunca ölçüm yaparak kedinizin normal değerini belirleyin
+- Normalin üstünde sürekli artış varsa veterinerinize başvurun
+
+## Ne Zaman Veterinere Gidilmeli?
+
+- Kedinizin solunum hızı dinlenirken dakikada 40'ın üzerine çıkıyorsa
+- Ağız açık nefes alıyorsa (kedilerde bu her zaman anormal bir bulgudur)
+- Ani arka bacak güçsüzlüğü veya felci varsa
+- Bayılma veya çökme atakları oluyorsa
+- Belirgin egzersiz intoleransı varsa
+- Karın şişliği fark ediyorsanız
+
+## Anka Veteriner Kliniği'nde Kardiyoloji Hizmeti
+
+Anka Veteriner Kliniği olarak kedilerde kalp hastalıklarının erken teşhisi için ekokardiyografi, EKG, dijital röntgen ve kapsamlı kan tahlilleri ile hizmet vermekteyiz. Özellikle yatkın ırklara sahip kedi sahiplerine düzenli kardiyolojik kontrol öneriyoruz.
+
+7/24 acil hizmetimizle nefes darlığı, arka bacak felci gibi acil kalp komplikasyonlarına hızlı müdahale imkanı sunuyoruz. Kedinizin sağlığı bizim önceliğimizdir.`,
+    category: 'Kedi',
+    date: '2026-04-02',
+    readTime: '14 dk',
+    author: 'Uzm. Vet. Hek. İbrahim Yıldırım',
+    excerpt: 'Kedilerde kalp hastalıkları sinsi ilerler ve genellikle geç fark edilir. Erken teşhis kedinizin yaşam kalitesini korumak için kritik öneme sahiptir.',
+  },
+
   'kopeklerde-parvovirus-belirtileri': {
     title: 'Köpeklerde Parvovirüs: Belirtileri, Korunma ve Erken Teşhis',
     content: `Parvovirüs (CPV-2), özellikle aşılanmamış yavru köpeklerde yüksek ölüm oranına sahip, son derece bulaşıcı bir viral enfeksiyondur. Uzm. Vet. Hek. İbrahim Yıldırım olarak, kliniğimizde yılda onlarca parvovirüs vakası ile karşılaşıyoruz ve erken müdahalenin hayat kurtardığını biliyoruz.

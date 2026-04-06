@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import AnimatedSection from '@/components/AnimatedSection';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
@@ -8,177 +7,205 @@ export const metadata: Metadata = {
     'Ürünlerimiz | Veteriner Mama, Vitamin ve Bakım Ürünleri | Anka Veteriner Kliniği Batıkent',
   description:
     'Batıkent Ankara ANKA Veteriner Kliniği ürünleri. Royal Canin, Hills, YNC, Viyo ve daha fazlası. Orijinal veteriner ürünleri. (0312) 354 26 52',
-};
-
+}; 
 const WA = '905548550590';
 
 const urunler = [
   {
     name: 'Royal Canin Hypoallergenic',
     desc: 'Alerji ve gıda hassasiyeti olan kedi ve köpekler için özel veteriner diyeti. Hidrolize protein kaynağı ile sindirim rahatlığı sağlar.',
-    image: '/images/products/royal-canin-hypoallergenic.jpeg',
     category: 'Veteriner Diyetleri',
     badge: 'Reçeteli Mama',
     brandColor: '#C8102E',
     brandBg: 'bg-red-700',
+    brandGradient: 'from-red-700 via-red-600 to-red-800',
+    brand: 'ROYAL CANIN',
+    brandSub: 'Veterinary Diet',
     tagline: 'Hipoalerjenik Veteriner Diyeti',
+    icon: 'shield',
     waMsg: 'Merhaba, *Royal Canin Hypoallergenic* mama hakkında bilgi almak istiyorum. Kedim/köpeğimde alerji var, bu ürün uygun olur mu? Stok durumu ve fiyat bilgisi alabilir miyim?',
   },
   {
     name: 'Royal Canin Cardiac',
     desc: 'Kalp yetmezliği olan köpekler için düşük sodyumlu özel diyet maması. Kalp fonksiyonlarını destekler.',
-    image: '/images/products/royal-canin-cardiac.jpeg',
     category: 'Veteriner Diyetleri',
     badge: 'Reçeteli Mama',
     brandColor: '#C8102E',
     brandBg: 'bg-red-700',
+    brandGradient: 'from-red-800 via-red-700 to-rose-900',
+    brand: 'ROYAL CANIN',
+    brandSub: 'Veterinary Diet',
     tagline: 'Kalp Sağlığı Diyeti',
+    icon: 'heart',
     waMsg: 'Merhaba, *Royal Canin Cardiac* mama hakkında bilgi almak istiyorum. Köpeğimin kalp sorunu var, bu diyet maması uygun mu? Stok durumu ve fiyatını öğrenebilir miyim?',
   },
   {
     name: 'Royal Canin Dental',
     desc: 'Diş ve ağız sağlığını destekleyen özel formülasyonlu mama. Diş taşı oluşumunu azaltır.',
-    image: '/images/products/royal-canin-dental.jpeg',
     category: 'Veteriner Diyetleri',
     badge: 'Ağız Bakım',
     brandColor: '#C8102E',
     brandBg: 'bg-red-700',
+    brandGradient: 'from-red-600 via-rose-600 to-red-700',
+    brand: 'ROYAL CANIN',
+    brandSub: 'Veterinary Diet',
     tagline: 'Diş & Ağız Sağlığı Maması',
+    icon: 'sparkle',
     waMsg: 'Merhaba, *Royal Canin Dental* mama hakkında bilgi almak istiyorum. Evcil hayvanımın diş sağlığı için bu ürünü kullanmak istiyorum. Stok durumu ve fiyatı nedir?',
   },
   {
     name: 'Royal Canin Neutered Satiety Balance',
     desc: 'Kısırlaştırılmış kedi ve köpekler için kilo kontrol maması. Tokluk hissi sağlayarak ideal kiloyu korur.',
-    image: '/images/products/royal-canin-neutered-satiety-balance.jpeg',
     category: 'Veteriner Diyetleri',
     badge: 'Kilo Kontrol',
     brandColor: '#C8102E',
     brandBg: 'bg-red-700',
+    brandGradient: 'from-red-700 via-rose-700 to-red-800',
+    brand: 'ROYAL CANIN',
+    brandSub: 'Veterinary Diet',
     tagline: 'Kısırlaştırma Sonrası Kilo Kontrol',
+    icon: 'scale',
     waMsg: 'Merhaba, *Royal Canin Neutered Satiety Balance* mama hakkında bilgi almak istiyorum. Kısırlaştırılmış kedim/köpeğim için kilo kontrol maması arıyorum. Stok ve fiyat bilgisi alabilir miyim?',
   },
   {
     name: 'Royal Canin Recovery',
     desc: 'Ameliyat sonrası ve hastalık döneminde iyileşmeyi hızlandıran yüksek enerjili beslenme desteği.',
-    image: '/images/products/royal-canin-recovery.jpeg',
     category: 'Veteriner Diyetleri',
     badge: 'İyileşme Desteği',
     brandColor: '#C8102E',
     brandBg: 'bg-red-700',
+    brandGradient: 'from-red-800 via-red-700 to-red-900',
+    brand: 'ROYAL CANIN',
+    brandSub: 'Veterinary Diet',
     tagline: 'Ameliyat Sonrası İyileşme Maması',
+    icon: 'plus',
     waMsg: 'Merhaba, *Royal Canin Recovery* mama hakkında bilgi almak istiyorum. Evcil hayvanım ameliyat oldu, iyileşme sürecinde bu ürünü kullanmak istiyorum. Stok durumu ve fiyatı nedir?',
   },
   {
     name: "Hill's Prescription Mobility",
     desc: 'Eklem sorunları ve hareket kısıtlılığı olan evcil hayvanlar için klinik beslenme. Eklem sağlığını destekler.',
-    image: '/images/products/hills-prescription-mobility.jpeg',
     category: 'Veteriner Diyetleri',
     badge: 'Eklem Sağlığı',
     brandColor: '#003DA5',
     brandBg: 'bg-blue-800',
+    brandGradient: 'from-blue-800 via-blue-700 to-indigo-900',
+    brand: "HILL'S",
+    brandSub: 'Prescription Diet',
     tagline: 'Eklem & Hareket Desteği',
+    icon: 'bone',
     waMsg: "Merhaba, *Hill's Prescription Mobility* mama hakkında bilgi almak istiyorum. Evcil hayvanımın eklem sorunları var, bu ürün uygun mu? Stok durumu ve fiyatını öğrenebilir miyim?",
   },
   {
     name: "Hill's Prescription Sensitivities",
     desc: 'Gıda ve çevresel hassasiyetleri olan evcil hayvanlar için özel formül. Deri ve sindirim sağlığını korur.',
-    image: '/images/products/hills-prescription-sensitivities.jpeg',
     category: 'Veteriner Diyetleri',
     badge: 'Hassas Sindirim',
     brandColor: '#003DA5',
     brandBg: 'bg-blue-800',
+    brandGradient: 'from-blue-700 via-indigo-700 to-blue-800',
+    brand: "HILL'S",
+    brandSub: 'Prescription Diet',
     tagline: 'Hassas Deri & Sindirim Formülü',
+    icon: 'leaf',
     waMsg: "Merhaba, *Hill's Prescription Sensitivities* mama hakkında bilgi almak istiyorum. Evcil hayvanımda gıda hassasiyeti var, bu ürün uygun olur mu? Stok ve fiyat bilgisi alabilir miyim?",
   },
   {
     name: "Hill's Prescription Dental & Safety",
     desc: 'Diş sağlığı ve kilo yönetimi için çift etkili veteriner diyeti. Ağız bakımı ve güvenli beslenme bir arada.',
-    image: '/images/products/hills-prescription-dental-safety.jpeg',
     category: 'Veteriner Diyetleri',
     badge: 'Diş Sağlığı',
     brandColor: '#003DA5',
     brandBg: 'bg-blue-800',
+    brandGradient: 'from-indigo-800 via-blue-700 to-blue-900',
+    brand: "HILL'S",
+    brandSub: 'Prescription Diet',
     tagline: 'Diş Bakımı & Güvenli Beslenme',
+    icon: 'sparkle',
     waMsg: "Merhaba, *Hill's Prescription Dental & Safety* mama hakkında bilgi almak istiyorum. Evcil hayvanımın diş sağlığı için bu ürünü düşünüyorum. Stok durumu ve fiyatını öğrenebilir miyim?",
   },
   {
     name: 'YNC Feline Vitacure Multivitamin',
     desc: 'Kediler için mikronize resveratrol ve multivitamin takviyesi. Bağışıklık sistemi ve metabolik destek sağlar.',
-    image: '/images/products/ync-feline-vitacure-multivitamin.jpeg',
     category: 'Vitamin ve Takviye',
     badge: 'Multivitamin',
     brandColor: '#047857',
     brandBg: 'bg-emerald-700',
+    brandGradient: 'from-emerald-700 via-emerald-600 to-teal-800',
+    brand: 'YNC',
+    brandSub: 'Veterinary Supplements',
     tagline: 'Kediler İçin Multivitamin Takviye',
+    icon: 'vitamin',
     waMsg: 'Merhaba, *YNC Feline Vitacure Multivitamin* hakkında bilgi almak istiyorum. Kedim için multivitamin takviyesi arıyorum. Stok durumu ve fiyatı nedir?',
   },
   {
     name: 'YNC Lipozomal Glutatyon',
     desc: 'Güçlü antioksidan desteği sunan lipozomal glutatyon takviyesi. Karaciğer sağlığı ve detoks için idealdir.',
-    image: '/images/products/ync-lipozomal-glutatyon.jpeg',
     category: 'Vitamin ve Takviye',
     badge: 'Antioksidan',
     brandColor: '#047857',
     brandBg: 'bg-emerald-700',
+    brandGradient: 'from-teal-700 via-emerald-700 to-green-800',
+    brand: 'YNC',
+    brandSub: 'Veterinary Supplements',
     tagline: 'Güçlü Antioksidan Desteği',
+    icon: 'shield',
     waMsg: 'Merhaba, *YNC Lipozomal Glutatyon* hakkında bilgi almak istiyorum. Evcil hayvanım için antioksidan takviyesi düşünüyorum. Stok durumu ve fiyatını öğrenebilir miyim?',
   },
   {
     name: 'Viyo Imune Prebiyotik',
     desc: 'Bağışıklık sistemini destekleyen lezzetli prebiyotik içecek. Veteriner hekimler tarafından geliştirilmiştir.',
-    image: '/images/products/viyo-imune-prebiyotik.jpeg',
     category: 'Vitamin ve Takviye',
     badge: 'Bağışıklık',
     brandColor: '#0891B2',
     brandBg: 'bg-cyan-700',
+    brandGradient: 'from-cyan-700 via-cyan-600 to-teal-700',
+    brand: 'VIYO',
+    brandSub: 'Imune+',
     tagline: 'Bağışıklık Destekleyici Prebiyotik',
+    icon: 'shield',
     waMsg: 'Merhaba, *Viyo Imune Prebiyotik* hakkında bilgi almak istiyorum. Evcil hayvanımın bağışıklık sistemini desteklemek istiyorum. Stok durumu ve fiyatı nedir?',
   },
   {
     name: 'Immunpur & Skinpur Veteriner Takviye Seti',
     desc: 'Bağışıklık, deri, böbrek, karaciğer ve eklem sağlığını destekleyen kapsamlı veteriner takviye serisi.',
-    image: '/images/products/immunpur-skinpur-veteriner-takviye.jpeg',
     category: 'Vitamin ve Takviye',
     badge: 'Takviye Seti',
     brandColor: '#7C3AED',
     brandBg: 'bg-violet-700',
+    brandGradient: 'from-violet-700 via-purple-700 to-violet-800',
+    brand: 'IMMUNPUR',
+    brandSub: '& Skinpur',
     tagline: 'Kapsamlı Sağlık Takviye Seti',
+    icon: 'plus',
     waMsg: 'Merhaba, *Immunpur & Skinpur Veteriner Takviye Seti* hakkında bilgi almak istiyorum. Evcil hayvanım için kapsamlı takviye seti arıyorum. Stok durumu ve fiyatını öğrenebilir miyim?',
   },
   {
     name: 'Dr. Animal Ağız-Göz-Kulak Bakım Solüsyonu',
     desc: 'Kedi ve köpekler için ağız, göz ve kulak bakım solüsyonu. Günlük hijyen rutininiz için pratik çözüm.',
-    image: '/images/products/dr-animal-agiz-goz-kulak-bakim.jpeg',
     category: 'Bakım Ürünleri',
     badge: 'Hijyen',
     brandColor: '#0284C7',
     brandBg: 'bg-sky-700',
+    brandGradient: 'from-sky-700 via-sky-600 to-blue-700',
+    brand: 'DR. ANIMAL',
+    brandSub: 'Professional Care',
     tagline: 'Ağız · Göz · Kulak Bakım Seti',
+    icon: 'droplet',
     waMsg: 'Merhaba, *Dr. Animal Ağız-Göz-Kulak Bakım Solüsyonu* hakkında bilgi almak istiyorum. Evcil hayvanım için bakım solüsyonu arıyorum. Stok durumu ve fiyatı nedir?',
   },
-  {
-    name: 'Catfur Tüy Bakım Ürünü',
-    desc: 'Kediler için özel tüy bakım ve parlaklık ürünü. Sağlıklı, parlak ve yumuşak tüyler için formüle edilmiştir.',
-    image: '/images/products/catfur-bakim-urun.jpeg',
-    category: 'Bakım Ürünleri',
-    badge: 'Tüy Bakım',
-    brandColor: '#BE185D',
-    brandBg: 'bg-pink-700',
-    tagline: 'Parlak & Sağlıklı Tüyler İçin',
-    waMsg: 'Merhaba, *Catfur Tüy Bakım Ürünü* hakkında bilgi almak istiyorum. Kedimin tüy bakımı için bu ürünü kullanmak istiyorum. Stok durumu ve fiyatını öğrenebilir miyim?',
-  },
-  {
-    name: 'Ingle Veteriner Bakım Ürünü',
-    desc: 'Evcil hayvanlar için profesyonel veteriner bakım ürünü. Kliniğimizde hekim önerisiyle temin edilebilir.',
-    image: '/images/products/ingle-veteriner-urun.jpeg',
-    category: 'Bakım Ürünleri',
-    badge: 'Profesyonel',
-    brandColor: '#475569',
-    brandBg: 'bg-slate-600',
-    tagline: 'Profesyonel Veteriner Bakım',
-    waMsg: 'Merhaba, *Ingle Veteriner Bakım Ürünü* hakkında bilgi almak istiyorum. Evcil hayvanım için profesyonel bakım ürünü arıyorum. Stok durumu ve fiyatı nedir?',
-  },
 ];
+
+const iconMap: Record<string, JSX.Element> = {
+  shield: <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>,
+  heart: <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>,
+  sparkle: <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z" /></svg>,
+  scale: <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" /></svg>,
+  plus: <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>,
+  bone: <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" /></svg>,
+  leaf: <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>,
+  vitamin: <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" /></svg>,
+  droplet: <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 6.51 6.51 0 009 3c2.123 0 4.047.862 5.438 2.257l.924-.043z" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" /></svg>,
+};
 
 export default function UrunlerimizPage() {
   return (
@@ -192,6 +219,7 @@ export default function UrunlerimizPage() {
 
       {/* Hero */}
       <section className="relative py-20 bg-gradient-to-br from-purple-600 via-indigo-600 to-purple-800 overflow-hidden">
+        <div className="paw-bg" />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-300 rounded-full blur-3xl" />
@@ -221,7 +249,7 @@ export default function UrunlerimizPage() {
             {[
               { label: 'Veteriner Diyetleri', icon: '🥩', count: 8 },
               { label: 'Vitamin ve Takviye', icon: '💊', count: 4 },
-              { label: 'Bakım Ürünleri', icon: '🧴', count: 3 },
+              { label: 'Bakım Ürünleri', icon: '🧴', count: 1 },
             ].map((kat) => (
               <span
                 key={kat.label}
@@ -239,8 +267,9 @@ export default function UrunlerimizPage() {
       </section>
 
       {/* Ürün Grid */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 bg-gray-50 overflow-hidden">
+        <div className="paw-bg-light" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {urunler.map((urun, index) => {
               const waUrl = `https://wa.me/${WA}?text=${encodeURIComponent(urun.waMsg)}`;
@@ -248,21 +277,27 @@ export default function UrunlerimizPage() {
                 <AnimatedSection key={urun.name} delay={index * 0.05}>
                   <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 border border-gray-100 h-full flex flex-col">
                     {/* Ürün Görsel Alanı */}
-                    <div className="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                      {/* Gerçek ürün fotoğrafı */}
-                      <Image
-                        src={urun.image}
-                        alt={urun.name}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-700"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
+                    <div className={`relative aspect-[4/3] overflow-hidden bg-gradient-to-br ${urun.brandGradient}`}>
+                      {/* Dekoratif arka plan desenleri */}
+                      <div className="absolute inset-0 opacity-10">
+                        <div className="absolute -top-10 -right-10 w-40 h-40 bg-white rounded-full blur-2xl" />
+                        <div className="absolute -bottom-10 -left-10 w-52 h-52 bg-white/50 rounded-full blur-3xl" />
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-white/20 rounded-full" />
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border border-white/10 rounded-full" />
+                      </div>
 
-                      {/* Üst gradient overlay - badge alanı için */}
-                      <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-black/40 to-transparent z-10" />
+                      {/* Marka adı üstte */}
+                      <div className="absolute top-4 left-0 right-0 z-20 text-center">
+                        <p className="text-white/90 text-lg font-extrabold tracking-[0.2em] drop-shadow-lg">{urun.brand}</p>
+                        <p className="text-white/60 text-[10px] tracking-[0.15em] font-medium">{urun.brandSub}</p>
+                      </div>
 
-                      {/* Alt gradient overlay - tagline alanı için */}
-                      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 via-black/40 to-transparent z-10" />
+                      {/* Ortada ikon */}
+                      <div className="absolute inset-0 flex items-center justify-center z-10">
+                        <div className="w-20 h-20 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform duration-500 text-white">
+                          {iconMap[urun.icon]}
+                        </div>
+                      </div>
 
                       {/* Badge - sol üst */}
                       <div className="absolute top-3 left-3 z-20">

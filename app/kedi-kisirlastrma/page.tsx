@@ -31,8 +31,9 @@ export default function KediKisirlastrmaPage() {
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Hizmetler', href: '/hizmetler' }, { name: 'Kedi Kısırlaştırma', href: '/kedi-kisirlastrma' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Kedi Kısırlaştırma', description: 'Profesyonel kedi kısırlaştırma ameliyatı', url: 'https://batikentankavet.com/kedi-kisirlastrma', provider: { '@type': 'VeterinaryCare', name: 'Anka Veteriner Kliniği', telephone: '+903123542652', address: { '@type': 'PostalAddress', addressLocality: 'Batıkent, Yenimahalle', addressRegion: 'Ankara', addressCountry: 'TR' } }, specialty: 'Kedi Kısırlaştırma Cerrahisi' }) }} />
 
-      <section className="relative py-20 bg-gradient-to-br from-pink-500 to-primary-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 bg-gradient-to-br from-pink-500 to-primary-700 overflow-hidden">
+        <div className="paw-bg" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimatedSection>
             <i className="fa-solid fa-paw text-5xl text-white mx-auto mb-4" />
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Kedi Kısırlaştırma</h1>

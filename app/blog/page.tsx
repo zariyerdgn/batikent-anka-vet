@@ -8,6 +8,15 @@ import PawPattern from '@/components/PawPattern';
 
 const blogPosts = [
   {
+    slug: 'kedilerde-kalp-hastaliklari',
+    title: 'Kedilerde Sık Görülen Kalp Hastalıkları: Belirtiler, Türler ve Erken Teşhis',
+    excerpt: 'Kedilerde kalp hastalıkları sinsi ilerler ve genellikle geç fark edilir. Erken teşhis kedinizin yaşam kalitesini korumak için kritik öneme sahiptir.',
+    category: 'Kedi',
+    date: '2026-04-02',
+    readTime: '14 dk',
+    author: 'Uzm. Vet. Hek. İbrahim Yıldırım',
+  },
+  {
     slug: 'kopeklerde-parvovirus-belirtileri',
     title: 'Köpeklerde Parvovirüs: Belirtileri, Korunma ve Erken Teşhis',
     excerpt: 'Parvovirüs, özellikle yavru köpeklerde ölümcül olabilen tehlikeli bir viral enfeksiyondur. Erken teşhis hayat kurtarır.',

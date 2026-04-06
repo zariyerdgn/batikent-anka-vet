@@ -126,8 +126,9 @@ export default function GaleriPage() {
 
   return (
     <>
-      <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800 overflow-hidden">
+        <div className="paw-bg" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimatedSection>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Galeri</h1>
             <p className="text-lg text-primary-100">Kliniğimizden görüntüler</p>
@@ -135,8 +136,9 @@ export default function GaleriPage() {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 overflow-hidden">
+        <div className="paw-bg-light" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {galleryImages.map((img, i) => (
               <AnimatedSection key={img.src} delay={i * 0.02}>

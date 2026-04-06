@@ -39,6 +39,7 @@ export default function IletisimPage() {
 
       {/* Hero */}
       <section className="relative py-20 bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 overflow-hidden">
+        <div className="paw-bg" />
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent-500/10 rounded-full blur-3xl" />
@@ -60,8 +61,9 @@ export default function IletisimPage() {
       </section>
 
       {/* Ana İçerik */}
-      <section className="py-16 lg:py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 lg:py-20 bg-gray-50 overflow-hidden">
+        <div className="paw-bg-light" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
           {/* Üst Bilgi Kartları */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 mb-14">

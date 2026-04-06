@@ -11,10 +11,36 @@ interface SlideData {
   badge: string;
   title: string;
   subtitle: string;
-  type: 'team' | 'scene';
+  type: 'team' | 'scene' | 'panoramic';
+  objectPos?: string;
 }
 
 const slides: SlideData[] = [
+  {
+    src: '/images/hero/eko1.jpeg',
+    alt: 'Anka Veteriner Kliniği Ekokardiyografi Hizmeti - Batıkent',
+    badge: 'Ekokardiyografi',
+    title: 'Ekokardiyografi Hizmeti',
+    subtitle: 'Profesyonel kardiyoloji ekipmanlarıyla kalp sağlığı değerlendirmesi',
+    type: 'panoramic',
+  },
+  {
+    src: '/images/hero/eko2.jpeg',
+    alt: 'Anka Veteriner Kliniği Ekokardiyografi Uygulaması - Batıkent',
+    badge: 'Kardiyoloji',
+    title: 'Kardiyoloji Ünitesi',
+    subtitle: 'Son teknoloji cihazlarla evcil dostlarınızın kalp sağlığı güvende',
+    type: 'panoramic',
+  },
+  {
+    src: '/images/hero/batikent-klinik.jpeg',
+    alt: 'Anka Veteriner Kliniği Dış Görünüm - Batıkent',
+    badge: 'Kliniğimiz',
+    title: 'Anka Veteriner Kliniği',
+    subtitle: 'Batıkent\'te güvenilir veteriner hizmeti',
+    type: 'scene',
+    objectPos: 'center 15%',
+  },
   {
     src: '/images/clinic/anka-vet-ekip.png',
     alt: 'Anka Veteriner Kliniği Ekibi - Batıkent',
@@ -127,7 +153,7 @@ export default function HeroSlider() {
 
   return (
     <section
-      className="relative w-full h-[50vh] md:h-[65vh] overflow-hidden bg-gray-950"
+      className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden bg-gray-950"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -199,6 +225,30 @@ export default function HeroSlider() {
 
               <div className="hidden md:block absolute right-[45%] top-[15%] bottom-[15%] w-px bg-gradient-to-b from-transparent via-primary-400/30 to-transparent" />
             </>
+          ) : slide.type === 'panoramic' ? (
+            <>
+              {/* === PANORAMIC SLIDE: görsel tam görünsün === */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-[#0a1628] to-gray-950" />
+              <motion.div
+                className="absolute inset-0 flex items-center justify-center"
+                initial={{ scale: 1 }}
+                animate={{ scale: 1.03 }}
+                transition={{ duration: 8, ease: 'linear' }}
+              >
+                <Image
+                  src={slide.src}
+                  alt={slide.alt}
+                  fill
+                  className="object-contain"
+                  style={{ objectPosition: 'center center' }}
+                  priority={current <= 1}
+                  sizes="100vw"
+                  quality={95}
+                />
+              </motion.div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />
+            </>
           ) : (
             <>
               {/* === SCENE SLIDE: full screen background === */}
@@ -213,7 +263,7 @@ export default function HeroSlider() {
                   alt={slide.alt}
                   fill
                   className="object-cover"
-                  style={{ objectPosition: 'center center' }}
+                  style={{ objectPosition: slide.objectPos || 'center center' }}
                   priority={current <= 1}
                   sizes="100vw"
                 />
@@ -229,7 +279,7 @@ export default function HeroSlider() {
       <div className="absolute inset-0 z-10 flex items-end pb-20 md:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <AnimatePresence mode="wait">
-            <motion.div key={`content-${current}`} className={slide.type === 'team' ? 'md:max-w-[52%]' : ''}>
+            <motion.div key={`content-${current}`} className={slide.type === 'team' ? 'md:max-w-[52%]' : slide.type === 'panoramic' ? 'md:max-w-[60%]' : ''}>
               <motion.h1 custom={0} variants={textVariants} initial="hidden" animate="visible"
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 drop-shadow-2xl leading-tight"
               >

@@ -33,8 +33,9 @@ export default function KediKopekMuayenePage() {
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Hizmetler', href: '/hizmetler' }, { name: 'Kedi & Köpek Muayene', href: '/kedi-kopek-muayene' }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'MedicalWebPage', name: 'Kedi & Köpek Muayene', description: 'Kedi ve köpek genel sağlık muayenesi', url: 'https://batikentankavet.com/kedi-kopek-muayene', provider: { '@type': 'VeterinaryCare', name: 'Anka Veteriner Kliniği', telephone: '+903123542652', address: { '@type': 'PostalAddress', addressLocality: 'Batıkent, Yenimahalle', addressRegion: 'Ankara', addressCountry: 'TR' } }, specialty: 'Genel Muayene ve Tedavi' }) }} />
 
-      <section className="relative py-20 bg-gradient-to-br from-blue-600 to-primary-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 bg-gradient-to-br from-blue-600 to-primary-700 overflow-hidden">
+        <div className="paw-bg" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimatedSection>
             <i className="fa-solid fa-paw text-5xl text-white mx-auto mb-4" />
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Kedi & Köpek Muayene</h1>

@@ -43,8 +43,9 @@ export default function RandevuPage() {
     <>
       <BreadcrumbSchema items={[{ name: 'Ana Sayfa', href: '/' }, { name: 'Randevu', href: '/randevu' }]} />
 
-      <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-20 bg-gradient-to-br from-primary-600 to-primary-800 overflow-hidden">
+        <div className="paw-bg" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimatedSection>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Online Randevu</h1>
             <p className="text-lg text-primary-100">Hızlı ve kolay randevu oluşturun</p>

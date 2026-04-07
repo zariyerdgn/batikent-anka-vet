@@ -153,7 +153,7 @@ export default function HeroSlider() {
 
   return (
     <section
-      className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden bg-gray-950"
+      className="relative w-full h-[70vh] sm:h-[65vh] md:h-[70vh] overflow-hidden bg-gray-950"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -227,7 +227,7 @@ export default function HeroSlider() {
             </>
           ) : slide.type === 'panoramic' ? (
             <>
-              {/* === PANORAMIC SLIDE: görsel tam görünsün === */}
+              {/* === PANORAMIC SLIDE: mobilde tam ekran, masaüstünde contain === */}
               <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-[#0a1628] to-gray-950" />
               <motion.div
                 className="absolute inset-0 flex items-center justify-center"
@@ -239,7 +239,7 @@ export default function HeroSlider() {
                   src={slide.src}
                   alt={slide.alt}
                   fill
-                  className="object-contain"
+                  className="object-cover md:object-contain"
                   style={{ objectPosition: 'center center' }}
                   priority={current <= 1}
                   sizes="100vw"
